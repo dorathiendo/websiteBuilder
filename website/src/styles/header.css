@@ -1,0 +1,16 @@
+.header {
+  padding: 20px;
+  background-color: #eeeeee;
+}
+.header ul {
+  margin: 0;
+  list-style-type: none;
+}
+.header ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+}
+.header ul li:first-child {
+  padding-right: 20px;
+}
