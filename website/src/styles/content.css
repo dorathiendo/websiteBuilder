@@ -1,0 +1,13 @@
+.contentSection {
+  padding: 5% 10%;
+}
+.contentSection h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+.contentSection .contentWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contentSection .contentWrapper .content {
+  background-color: red;
+}

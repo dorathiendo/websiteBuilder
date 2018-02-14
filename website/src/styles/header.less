@@ -1,15 +1,52 @@
 .header {
-  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  padding: 30px;
   background-color: #eeeeee;
-  ul {
+  & > * {
+    display: inline-block;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Libre Baskerville', serif;
+  }
+  ul.nav {
+    float: right;
     margin: 0;
     list-style-type: none;
-    li {
+    & > li {
+      text-align: center;
       display: inline-block;
       margin: 0;
-      padding: 0 10px;
-      &:first-child {
-        padding-right: 100px;
+      padding: 0 30px;
+      position: relative;
+      &:hover {
+        ul.subNav {
+          height: 300px;
+        }
+      }
+      ul.subNav {
+        -webkit-transition: height 300ms linear 0s;
+        -moz-transition: height 300ms linear 0s;
+        -ms-transition: height 300ms linear 0s;
+        -o-transition: height 300ms linear 0s;
+        transition: height 300ms linear 0s;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        //background-color: white;
+        & > li {
+          margin: 0;
+          padding: 20px 20px 10px 0;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
       }
     }
   }

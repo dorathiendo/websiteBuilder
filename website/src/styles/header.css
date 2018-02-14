@@ -1,16 +1,50 @@
 .header {
-  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  padding: 30px;
   background-color: #eeeeee;
 }
-.header ul {
+.header > * {
+  display: inline-block;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1em;
+  font-family: 'Libre Baskerville', serif;
+}
+.header ul.nav {
+  float: right;
   margin: 0;
   list-style-type: none;
 }
-.header ul li {
+.header ul.nav > li {
+  text-align: center;
   display: inline-block;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px;
+  position: relative;
 }
-.header ul li:first-child {
-  padding-right: 20px;
+.header ul.nav > li:hover ul.subNav {
+  height: 300px;
+}
+.header ul.nav > li ul.subNav {
+  -webkit-transition: height 300ms linear 0s;
+  -moz-transition: height 300ms linear 0s;
+  -ms-transition: height 300ms linear 0s;
+  -o-transition: height 300ms linear 0s;
+  transition: height 300ms linear 0s;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header ul.nav > li ul.subNav > li {
+  margin: 0;
+  padding: 20px 20px 10px 0;
+}
+.header ul.nav > li ul.subNav > li:hover {
+  opacity: 0.5;
 }
