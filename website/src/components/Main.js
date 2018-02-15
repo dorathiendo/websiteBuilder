@@ -1,21 +1,48 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import TransitionGroup from "react-transition-group/TransitionGroup";
+import AnimatedSwitch from "./AnimatedSwitch";
 
 import Home from './Home';
 import About from '../components/About.js';
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
-const Main = () => (
+const firstChild = props => {
+    const childrenArray = React.Children.toArray(props.children);
+    return childrenArray[0] || null;
+};
+
+const Main = ({ location }) => (
     <main>
-        <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route exact path='/about' component={About}/>
-        </Switch>
+        <TransitionGroup component="main">
+            <AnimatedSwitch
+                key={location}
+                location={location}
+                >
+                <Route exact path="/" component={Home} />
+                <Route
+                    exact
+                    path="/about"
+                    component={About}
+                    />
+            </AnimatedSwitch>
+        </TransitionGroup>
     </main>
 );
 
 export default Main;
+
+
+//<Switch>
+//    <Route exact path='/'
+//           children={({ match, ...rest }) => (
+//                <TransitionGroup component={firstChild}>
+//                  {match && <Home {...rest} />}
+//                </TransitionGroup> )}
+//        />
+//    <Route exact path='/about'
+//           children={({ match, ...rest }) => (
+//                     <TransitionGroup component={firstChild}>
+//                       {match && <About {...rest} />}
+//                     </TransitionGroup> )}
+//        />
+//</Switch>
