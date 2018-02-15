@@ -21,8 +21,8 @@
 .header ul.nav > li {
   text-align: center;
   display: inline-block;
-  margin: 0;
-  padding: 0 30px;
+  margin: 0 30px;
+  padding: 0 20px;
   position: relative;
 }
 .header ul.nav > li:hover ul.subNav {
@@ -42,9 +42,35 @@
   list-style-type: none;
 }
 .header ul.nav > li ul.subNav > li {
+  text-wrap: none;
   margin: 0;
   padding: 20px 20px 10px 0;
 }
 .header ul.nav > li ul.subNav > li:hover {
   opacity: 0.5;
+}
+.brackets > li:before,
+.brackets > li:after {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  transition: all 0.3s;
+}
+.brackets > li:before {
+  font-weight: bold;
+  content: '(';
+  left: 0px;
+  transform: translateX(10px);
+}
+.brackets > li:after {
+  font-weight: bold;
+  content: ')';
+  right: 0px;
+  transform: translateX(-10px);
+}
+.brackets > li:hover:before,
+.brackets > li:hover:after {
+  font-weight: bold;
+  opacity: 1;
+  transform: translateX(0px);
 }

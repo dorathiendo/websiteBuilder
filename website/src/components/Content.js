@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/content.css'
+import '../styles/content.css';
 
 export default class Content extends Component {
   render() {
@@ -8,10 +8,11 @@ export default class Content extends Component {
           <h1>Header</h1>
           <div className="contentWrapper">
             <div className="content">
-              {this.props.title}
+              <img src={this.props.image} />
             </div>
             <div className="content">
-              {this.props.title}
+              <h2>{this.props.title}</h2>
+              {this.props.content}
             </div>
           </div>
         </div>

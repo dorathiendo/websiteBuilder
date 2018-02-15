@@ -7,7 +7,16 @@
 .contentSection .contentWrapper {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
 }
 .contentSection .contentWrapper .content {
-  background-color: red;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.contentSection .contentWrapper .content img {
+  object-fit: cover;
 }

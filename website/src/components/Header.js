@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/header.css'
 
 export default class Header extends Component {
@@ -6,9 +8,9 @@ export default class Header extends Component {
         return (
             <div className="header">
                 <h1>Logo</h1>
-                <ul className="nav">
+                <ul className="nav brackets">
                     <li>
-                        <a href="">Nav Button</a>
+                        <Link to='/about'>About</Link>
                         <ul className="subNav">
                             <li><a href="">Sub Nav</a></li>
                             <li><a href="">Sub Nav</a></li>
@@ -16,7 +18,7 @@ export default class Header extends Component {
                         </ul>
                     </li>
                     <li>
-                        <a href="">Nav Button</a>
+                        <a href="">Nav</a>
                         <ul className="subNav">
                             <li><a href="">Sub Nav</a></li>
                             <li><a href="">Sub Nav</a></li>
@@ -24,7 +26,7 @@ export default class Header extends Component {
                         </ul>
                     </li>
                     <li>
-                        <a href="">Nav Button</a>
+                        <Link to='/'>Home</Link>
                     </li>
                 </ul>
             </div>
