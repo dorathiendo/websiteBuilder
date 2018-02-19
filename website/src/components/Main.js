@@ -4,7 +4,7 @@ import TransitionGroup from "react-transition-group/TransitionGroup";
 import AnimatedSwitch from "./AnimatedSwitch";
 
 import Home from './Home';
-import About from '../components/About.js';
+import About from './About.js';
 
 const firstChild = props => {
     const childrenArray = React.Children.toArray(props.children);
@@ -15,7 +15,7 @@ const Main = ({ location }) => (
     <main>
         <TransitionGroup component="main">
             <AnimatedSwitch
-                key={location}
+                key={location.key}
                 location={location}
                 >
                 <Route exact path="/" component={Home} />
