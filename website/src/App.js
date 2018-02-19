@@ -8,10 +8,13 @@ import Main from './components/Main.js';
 
 
 class App extends Component {
+  componentDidMount(){
+    document.title = this.props.name;
+  }
   render() {
     return (
       <div>
-        <Header></Header>
+        <Header name={this.props.name}></Header>
           <Main />
       </div>
     );

@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <App name="Biz MedSpa"/>
     </BrowserRouter>
     , document.getElementById('root'));
 
