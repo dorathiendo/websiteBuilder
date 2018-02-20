@@ -1,21 +1,51 @@
 .contentSection {
-  padding: 5% 10%;
+  //padding: 5% 0;
   h1 {
     font-family: 'Libre Baskerville', serif;
   }
   .contentWrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
+
+    .gridLayout {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+      &.threeGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
     .content {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      min-height: 500px;
       justify-self: center;
       align-self: center;
       overflow: hidden;
-      width: 100%;
-      text-align: center;
-      img {
-        object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      position: relative;
+
+      button {
+        background: none;
+        outline: none;
+        border: 3px solid white;
+        padding: 10px;
+        margin: 20px;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }

@@ -1,9 +1,15 @@
 .header {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1;
+
+
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9em;
   padding: 30px;
-  background-color: #eeeeee;
   & > * {
     display: inline-block;
   }
@@ -14,23 +20,54 @@
     font-family: 'Libre Baskerville', serif;
   }
   ul.nav {
+    font-weight: 300;
+    @media screen and (max-width: 1129px){
+      display:none;
+      right: -100px;
+      -webkit-transition: right 300ms linear 0s;
+      -moz-transition: right 300ms linear 0s;
+      -ms-transition: right 300ms linear 0s;
+      -o-transition: right 300ms linear 0s;
+      transition: right 300ms linear 0s;
+      &.active {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        margin: 0;
+        padding: 20px 50px;
+        background-color: #eeeeee;
+        & > li {
+          padding: 10px 0;
+          display: block;
+        }
+      }
+    }
     float: right;
     font-size: 0.9em;
     text-align: center;
-    margin: 0;
+    margin: 0 30px;
     padding: 0;
     list-style-type: none;
     & > li {
       text-align: center;
       display: inline-block;
       margin: 0 10px;
-      padding: 0 20px;
+      padding: 0 15px;
       position: relative;
-      &:hover {
-        ul.subNav {
-          height: 300px;
+      &.bold {
+        font-weight: 700;
+      }
+      @media screen and (min-width: 1129px){
+        &:hover {
+          ul.subNav {
+            height: 500px;
+          }
         }
       }
+
       ul.subNav {
         -webkit-transition: height 300ms linear 0s;
         -moz-transition: height 300ms linear 0s;
@@ -40,17 +77,22 @@
         height: 0;
         position: absolute;
         overflow: hidden;
+        left: -30px;
         margin: 0;
-        padding: 0;
+        padding: 10px 0 0 0;
         list-style-type: none;
-        //background-color: white;
+        //border-radius: 5px;
+        //-webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.5);
+        //-moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.5);
+        //box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.5);
         & > li {
+          background-color: white;
           text-wrap: none;
           margin: 0;
-          padding: 20px 20px 10px 0;
-          text-align: left;
+          padding: 10px 20px;
+          text-align: center;
           &:hover {
-            opacity: 0.5;
+            background-color: #eeeeee;
           }
         }
       }
@@ -58,29 +100,44 @@
   }
 }
 
+.menuButton {
+  float: right;
+  display: none;
+  @media screen and (max-width: 1129px){
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
+
 .brackets {
-  & > li:before, & > li:after {
-    position: absolute;
-    opacity: 0;
-    top: 0px;
-    transition: all 0.3s;
+  @media screen and (min-width: 1129px){
+    & > li:before, & > li:after {
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      transition: all 0.3s;
+    }
+    & > li:before {
+      font-weight: bold;
+      content: '(';
+      left: 0px;
+      transform: translateX(10px);
+    }
+    & > li:after {
+      font-weight: bold;
+      content: ')';
+      right: 0px;
+      transform: translateX(-10px);
+    }
+    & > li:hover:before, & > li:hover:after {
+      font-weight: bold;
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
-  & > li:before {
-    font-weight: bold;
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
-  }
-  & > li:after {
-    font-weight: bold;
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
-  }
-  & > li:hover:before, & > li:hover:after {
-    font-weight: bold;
-    opacity: 1;
-    transform: translateX(0px);
-  }
+
 
 }

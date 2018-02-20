@@ -1,22 +1,42 @@
-.contentSection {
-  padding: 5% 10%;
-}
 .contentSection h1 {
   font-family: 'Libre Baskerville', serif;
 }
-.contentSection .contentWrapper {
+.contentSection .contentWrapper .gridLayout {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr;
   grid-row-gap: 30px;
-  grid-column-gap: 30px;
+}
+.contentSection .contentWrapper .gridLayout.threeGrid {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .contentSection .contentWrapper .content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   justify-self: center;
   align-self: center;
   overflow: hidden;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
 }
-.contentSection .contentWrapper .content img {
-  object-fit: cover;
+.contentSection .contentWrapper .content button {
+  background: none;
+  outline: none;
+  border: 3px solid white;
+  padding: 10px;
+  margin: 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+.contentSection .contentWrapper .content button:hover {
+  opacity: 0.5;
 }
