@@ -8,6 +8,19 @@
 .contentSection .contentWrapper .gridLayout.threeGrid {
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media screen and (max-width: 1129px) {
+  .contentSection .contentWrapper .gridLayout.threeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.contentSection .contentWrapper .gridLayout.fourGrid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1129px) {
+  .contentSection .contentWrapper .gridLayout.fourGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .contentSection .contentWrapper .gridLayout.twoGrid {
   grid-template-columns: 1fr 1fr;
 }
@@ -18,7 +31,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 400px;
   justify-self: center;
   align-self: center;
   overflow: hidden;
@@ -28,32 +41,56 @@
   justify-content: center;
   align-content: center;
   position: relative;
+  padding: 50px 0;
+}
+.contentSection .contentWrapper .content.white {
+  color: white;
 }
 .contentSection .contentWrapper .content h2 {
-  margin: 10px 0;
+  margin: 0;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.contentSection .contentWrapper .content h3 {
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.contentSection .contentWrapper .content .icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px 30px;
 }
 .contentSection .contentWrapper .content p {
-  background-color: #ffffff;
-  margin: 10px 10%;
+  font-size: 0.9em;
+  margin: 0 10%;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
 }
 .contentSection .contentWrapper .content button {
   background: none;
   outline: none;
-  border: 3px solid white;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 20px;
   font-family: inherit;
   text-transform: uppercase;
-  color: white;
   letter-spacing: 0.1em;
-  font-size: 1em;
+  font-size: 0.8em;
+  font-weight: 700;
   cursor: pointer;
+}
+.contentSection .contentWrapper .content button.black {
+  border: 3px solid black;
+  color: black;
+}
+.contentSection .contentWrapper .content button.white {
+  border: 3px solid white;
+  color: white;
 }
 .contentSection .contentWrapper .content button:hover {
   opacity: 0.5;

@@ -4,6 +4,7 @@
   left:0;
   width: 100%;
   z-index: 1;
+  background: white;
 
 
   text-transform: uppercase;
@@ -21,28 +22,26 @@
   }
   ul.nav {
     font-weight: 300;
+    -webkit-transition: right 300ms linear 0s;
+    -moz-transition: right 300ms linear 0s;
+    -ms-transition: right 300ms linear 0s;
+    -o-transition: right 300ms linear 0s;
+    transition: right 300ms linear 0s;
     @media screen and (max-width: 1129px){
-      display:none;
-      right: -100px;
-      -webkit-transition: right 300ms linear 0s;
-      -moz-transition: right 300ms linear 0s;
-      -ms-transition: right 300ms linear 0s;
-      -o-transition: right 300ms linear 0s;
-      transition: right 300ms linear 0s;
+      right: -120%;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      height: 100%;
+      margin: 0;
+      padding: 20px 50px;
+      background-color: #eeeeee;
+      & > li {
+        padding: 10px 0 !important;
+        display: block !important;
+      }
       &.active {
-        z-index: 1;
-        display: block;
-        position: fixed;
-        top: 0;
         right: 0;
-        height: 100%;
-        margin: 0;
-        padding: 20px 50px;
-        background-color: #eeeeee;
-        & > li {
-          padding: 10px 0;
-          display: block;
-        }
       }
     }
     float: right;
@@ -67,7 +66,11 @@
           }
         }
       }
-
+      .subNavArrow {
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+      }
       ul.subNav {
         -webkit-transition: height 300ms linear 0s;
         -moz-transition: height 300ms linear 0s;
@@ -103,6 +106,10 @@
 .menuButton {
   float: right;
   display: none;
+  img {
+    height: 20px;
+    width: 20px;
+  }
   @media screen and (max-width: 1129px){
     display: block;
     position: fixed;

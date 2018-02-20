@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  background: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9em;
@@ -20,6 +21,11 @@
 }
 .header ul.nav {
   font-weight: 300;
+  -webkit-transition: right 300ms linear 0s;
+  -moz-transition: right 300ms linear 0s;
+  -ms-transition: right 300ms linear 0s;
+  -o-transition: right 300ms linear 0s;
+  transition: right 300ms linear 0s;
   float: right;
   font-size: 0.9em;
   text-align: center;
@@ -29,28 +35,21 @@
 }
 @media screen and (max-width: 1129px) {
   .header ul.nav {
-    display: none;
-    right: -100px;
-    -webkit-transition: right 300ms linear 0s;
-    -moz-transition: right 300ms linear 0s;
-    -ms-transition: right 300ms linear 0s;
-    -o-transition: right 300ms linear 0s;
-    transition: right 300ms linear 0s;
-  }
-  .header ul.nav.active {
+    right: -120%;
     z-index: 1;
-    display: block;
     position: fixed;
     top: 0;
-    right: 0;
     height: 100%;
     margin: 0;
     padding: 20px 50px;
     background-color: #eeeeee;
   }
-  .header ul.nav.active > li {
-    padding: 10px 0;
-    display: block;
+  .header ul.nav > li {
+    padding: 10px 0 !important;
+    display: block !important;
+  }
+  .header ul.nav.active {
+    right: 0;
   }
 }
 .header ul.nav > li {
@@ -67,6 +66,11 @@
   .header ul.nav > li:hover ul.subNav {
     height: 500px;
   }
+}
+.header ul.nav > li .subNavArrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
 }
 .header ul.nav > li ul.subNav {
   -webkit-transition: height 300ms linear 0s;
@@ -95,6 +99,10 @@
 .menuButton {
   float: right;
   display: none;
+}
+.menuButton img {
+  height: 20px;
+  width: 20px;
 }
 @media screen and (max-width: 1129px) {
   .menuButton {
