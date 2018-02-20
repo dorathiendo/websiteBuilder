@@ -4,10 +4,15 @@
 .contentSection .contentWrapper .gridLayout {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 30px;
 }
 .contentSection .contentWrapper .gridLayout.threeGrid {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.contentSection .contentWrapper .gridLayout.twoGrid {
+  grid-template-columns: 1fr 1fr;
+}
+.contentSection .contentWrapper .alignLeft .content {
+  justify-content: flex-start;
 }
 .contentSection .contentWrapper .content {
   background-repeat: no-repeat;
@@ -24,6 +29,19 @@
   align-content: center;
   position: relative;
 }
+.contentSection .contentWrapper .content h2 {
+  margin: 10px 0;
+}
+.contentSection .contentWrapper .content p {
+  background-color: #ffffff;
+  margin: 10px 10%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
+}
 .contentSection .contentWrapper .content button {
   background: none;
   outline: none;
@@ -39,4 +57,8 @@
 }
 .contentSection .contentWrapper .content button:hover {
   opacity: 0.5;
+}
+.contentSection .contentWrapper .content table td {
+  padding: 10px;
+  vertical-align: text-top;
 }
