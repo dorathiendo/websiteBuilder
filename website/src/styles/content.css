@@ -1,5 +1,8 @@
 .contentSection h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 .contentSection .contentWrapper .gridLayout {
   display: grid;
@@ -71,6 +74,21 @@
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+}
+.contentSection .contentWrapper .content form {
+  width: 30%;
+}
+.contentSection .contentWrapper .content form button {
+  margin: auto;
+}
+.contentSection .contentWrapper .content input[type="text"],
+.contentSection .contentWrapper .content textarea {
+  width: 100%;
+  display: block;
+  border: 3px solid black;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0;
 }
 .contentSection .contentWrapper .content button {
   background: none;

@@ -7,8 +7,8 @@ export default class Content extends Component {
         if(this.props.backgroundColor){
             styles.backgroundColor = this.props.backgroundColor
         }
-        if(this.props.image){
-            styles.backgroundImage = 'url("' + this.props.image + '")';
+        if(this.props.image) {
+            styles.backgroundImage = 'linear-gradient(rgb(87, 94, 109, 0.5), rgb(87, 94, 109, 0.5)), url("' + this.props.image + '")';
         }
         if(this.props.color){
             styles.color = this.props.color;

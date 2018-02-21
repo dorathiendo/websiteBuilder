@@ -1,7 +1,11 @@
 .contentSection {
   //padding: 5% 0;
   h1 {
-    font-family: 'Libre Baskerville', serif;
+    //font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
   }
 
   .contentWrapper {
@@ -87,6 +91,22 @@
         //-webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.2);
         //-moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.2);
         //box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.2);
+      }
+
+      form {
+        width: 30%;
+        button {
+          margin: auto;
+        }
+      }
+
+      input[type="text"], textarea {
+        width: 100%;
+        display: block;
+        border: 3px solid black;
+        outline: none;
+        padding: 10px;
+        margin: 10px 0;
       }
 
       button {

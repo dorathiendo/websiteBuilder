@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import '../styles/imageSlider.css'
 
 
@@ -10,12 +11,17 @@ export default class ImageSlider extends Component {
         this.sliderControls = this.sliderControls.bind(this);
     }
 
-    sliderControls(index){
-        console.log(this.controls);
-        this.images[index+1].className = 'hide';
-        console.log(this.controls[index+1]);
-        this.controls[index+1].className = 'controlButton';
-        this.controls[index].className = 'controlButton active';
+    sliderControls(event){
+        if(event.target.className == 'rightButton'){
+            var currentEl = ReactDOM.findDOMNode(this).getElementsByClassName('active')[0];
+            currentEl.className = '';
+            var nextEl = ReactDOM.findDOMNode(this).getElementsByClassName('hidden')[0];
+            nextEl.className = 'active';
+            currentEl.className = 'hidden';
+
+        } else {
+
+        }
     }
     renderControls(){
         var controls = [];
@@ -31,7 +37,13 @@ export default class ImageSlider extends Component {
     renderChildren(){
         var children = [];
         for(var i = 0; i < this.props.children.length; i++){
-            children.push(<img src={this.props.children[i].props.src} index={i} ref={c => this.images.push(c)} />)
+            var className = '';
+            if(i === 0){
+                className = 'active';
+            } else {
+                className = 'hidden';
+            }
+            children.push(<img className={className} src={this.props.children[i].props.src} index={i} ref={c => this.images.push(c)} />)
         }
         return children;
     }
@@ -40,7 +52,8 @@ export default class ImageSlider extends Component {
             <div className="imageSlider">
                 {this.renderChildren()}
                 <div className="controls">
-                    {this.renderControls()}
+                    <img onClick={this.sliderControls} className="leftButton" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVHhe7dshbtRBHIbhJcUsFU1QcAcc5Ry9QGXPAEeCUyCxSCSO2p4A+P1JMZtdu/OmfZ7ky2T0m4ybHQAA8FxdPp4s9mb2bfZn9nW2n7HIFuPHbIvxf7czFjgWY9vNjDM7FePz7MWMMzoV48vsYsYZiREiRogYIWKEiBEiRogYIWKEiBEiRogYIWKEiBHydiZGhBghYoSIESJGiBghYoSIESJGiBghYoSIESJGiBghYoSIESJGyKkY2/8MMc5MjBAxQsQIESPk5ez7TIyId7PDGFsgMRZ5NbufHUb5NGORD7OHmSghogSJEiRKkChBogSJEiRKkChBogSJEiRKkChBogRdz0SJESVIlCBRgkQJEiVIlCBRgkQJEiVIlCBRgkQJEiVIlCBRgkQJEiVIlCBRgkQJEiXoVJSPMxY5FuX37P2MRY5FuZux0Bbl12yL8XP2esZiV7Ptqdr/uwEAADxpu91fhIzG4NQU6FkAAAAASUVORK5CYII="/>
+                    <img onClick={this.sliderControls} className="rightButton" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVHhe7d0xSl1RGEbRp6WdXcAmvTaBOAjnEM0kJBmIA3AkGUqmEFMFIYr+T1I8RMu8s4u14ONyTrs59d0AAAD/y9G/LwE3s8fZz9nn7QXrnM6edvZ7JspCH2fb1yFKyPVsN4goAd9nosR8m4kSI0qQKEGiBIkSJEqQKEGiBIkSJEqQKEGiBIkSJEqQKEGiBIkSJEqQKEGiBIkS9F6U8xmLiBIkSpAoQaIEiRIkSpAoQaIEiRIkSpAoQaIEiRL0VpS72cmMRW5nr6N8nbHAxex+thvj7+xsxp69FeNhdjVjz8QIESNEjBAxQsQIeS/G5Yw9EyNEjBAxQsQIESNEjBAxQsQIESNEjBAxQsQIESNEjBAxQsQIESNEjBAxQsQIESNEjBAxQsQIESNEjBAxQsQIESNEjJDj2a+ZGBGv/6cuxmIHsx+zbYw/sy8zFjucfZp9eDkBAACw0GbzDK5nxuSPOeHiAAAAAElFTkSuQmCC"/>
                 </div>
             </div>
         )

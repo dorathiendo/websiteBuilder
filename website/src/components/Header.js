@@ -35,23 +35,29 @@ var jsonData = {
         },
         {
             'name': 'Health Clinic',
+            'link': 'healthclinic',
             'className': 'bold',
         },
         {
             'name': 'DaySpa',
+            'link': 'dayspa',
             'className': 'bold',
         },
         {
-            'name': 'Specials'
+            'name': 'Specials',
+            'link': 'specials'
         },
         {
-            'name': 'Ask Dr. Lee'
+            'name': 'Ask Dr. Lee',
+            'link': 'ask'
         },
         {
-            'name': 'Education'
+            'name': 'Education',
+            'link': 'education'
         },
         {
-            'name': 'Contact Us'
+            'name': 'Contact Us',
+            'link': 'contact'
         },
     ]
 };
@@ -98,7 +104,7 @@ export default class Header extends Component {
         return (
             <div className="header">
                 <h1><Link to='/'>{this.props.name}</Link></h1>
-                <ul className={(this.state.showSideNavigation) ? 'nav brackets active' : 'nav brackets'}>
+                <ul className={(this.state.showSideNavigation) ? 'nav active' : 'nav'}>
                     <li>
                         <div className="menuButton"
                                 onClick={this.openSideNavigation}>
