@@ -12,6 +12,7 @@ export default class Footer extends Component {
             <li>About Us</li>
             <li>Developer</li>
           </ul>
+          <p>Fremont, CA</p>
         </div>
       );
     }

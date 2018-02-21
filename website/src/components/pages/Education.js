@@ -23,71 +23,24 @@ export default class Education extends Component {
                     <div className="gridLayout fourGrid">
                         <Content
                             minHeight="auto">
-                            <h3>Thermage</h3>
+                            <h3>For Patients</h3>
                             <button className="black">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
-                            <h3>Liposuction</h3>
+                            <h3>Consent Forms</h3>
                             <button className="black">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
-                            <h3>Smart Lipo</h3>
+                            <h3>Dr. Lee and Biz MedSpa</h3>
                             <button className="black">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
-                            <h3>Vaser LipoSelection</h3>
+                            <h3>Common Side Effects</h3>
                             <button className="black">More</button>
                         </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>VelaShape</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LUX1540-FRACTIONAL LASER</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LUXV-ACNE TREATMENT</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>OMNILUX LIGHTS</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>BOTOX</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>BEYOND WHITE TEETH WHITENING</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>RADIESSE</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>JUVEDERM</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LATISSE</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        
-
                     </div>
                 </div>
             </div>
