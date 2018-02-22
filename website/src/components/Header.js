@@ -3,110 +3,25 @@ import { Link } from 'react-router-dom';
 
 import '../styles/header.css'
 
-import healthClinicData from './data/healthClinicData.json';
-
-var jsonData = {
-    'navigationLinks': [
-        {
-            'name': 'MedSpa',
-            'link': 'medspa',
-            'className': 'bold',
-            'subNav': [
-                {
-                    name: 'Thermage',
-                },
-                {
-                    name: 'Liposuction'
-                },
-                {
-                    name: 'Smart Lipo'
-                },
-                {
-                    name: 'Vaser LipoSelection'
-                },
-                {
-                    name: 'LUX1540-fractional laser'
-                },
-                {
-                    name: 'LUXV-acne treatment'
-                },
-                {
-                    name: 'More...'
-                }
-            ]
-        },
-        {
-            'name': 'Health Clinic',
-            'link': 'healthclinic',
-            'className': 'bold',
-            'subNav': [
-                {
-                    name: 'Injury Treatment',
-                },
-                {
-                    name: 'Counseling'
-                },
-                {
-                    name: 'Long Term Treatment'
-                },
-                {
-                    name: 'Conditioning'
-                }
-            ]
-        },
-        {
-            'name': 'DaySpa',
-            'link': 'dayspa',
-            'className': 'bold',
-            'subNav': [
-                {
-                    name: 'Injury Treatment',
-                    link: ''
-                },
-            ]
-        },
-        {
-            'name': 'Specials',
-            'link': 'specials'
-        },
-        {
-            'name': 'Ask Dr. Lee',
-            'link': 'ask'
-        },
-        {
-            'name': 'Education',
-            'link': 'education'
-        },
-        {
-            'name': 'Contact Us',
-            'link': 'contact'
-        },
-    ]
-};
+import data from './data/headerData.json';
 
 
 export default class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: null,
             showSideNavigation: false
         };
         this.openSideNavigation = this.openSideNavigation.bind(this);
     }
     componentWillMount() {
-        this.setState({
-            data: jsonData.navigationLinks
-        }, function(){
-            console.log(this.state.data.navigationLinks);
-        });
     }
     renderSubNav() {
-        return this.state.data.map(navLink => {
+        return data.navigationLinks.map(navLink => {
             var subNav = '', className = '', arrow  = '';
             if(navLink.subNav){
                 arrow = <img className="subNavArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVHhe7dHPTcMwGIfh3GEJLogxmAAJFmECxDZIrMEmjMEJ3KqfQCVt4/xxnOR5pJ8sX3zw2wAAAAAAAAAAAABNc3s46efucI7iIe0r7XV/I9dj2u7/Xva3gSLG92Gi5IkY8X+DohzHiInSzXGMWK8o92ltj8VEOe9UjNhzWpartI+0tsdiorS7FOMz7SYtmyj5JosRROlu8hhBlMuKxQiinFY8RhDlv9liBFF+zR4jiFJRjLDlKNXFCFuMUm2MsKUo1ccIW4iymBhhzVEWFyOsMcpiY4TrtLVEWXyMsIYoq4kRlhxldTHCEqOsNkZYUpTVxwhLiLKZGKHmKJuLEWqMstkYoaYom48RaogixpE5o4hxwhxRxLigZBQxOioRRYxMU0Z5ShOjhymiiDHQmFHEGMkYUcQY2ZAoYkykTxQxJpYTRYxCukR5TxOjoC5RTk2MifSJIsbEcqKIUUiXKGIUdi6KGDNpiyLGzP5GEaMSuyhvaWIAAAAAAAAAAAAAZGiaHx2luEHL0nIVAAAAAElFTkSuQmCC"/>
-                subNav = navLink.subNav.map((subNav) => <li><a href="">{subNav.name}</a></li>);
+                subNav = navLink.subNav.map((subNav) => <li><a href={'/'+navLink.link+'/'+subNav.link}>{subNav.name}</a></li>);
             }
             var className = (navLink.className) ? navLink.className : '';
             var link = (navLink.link) ? navLink.link : '';

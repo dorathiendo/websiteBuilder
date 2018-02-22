@@ -1,0 +1,105 @@
+{
+    "navigationLinks": [
+    {
+        "name": "MedSpa",
+        "link": "medspa",
+        "className": "bold",
+        "subNav": [
+            {
+                "name": "Thermage",
+                "link": "thermage"
+            },
+            {
+                "name": "Liposuction",
+                "link": "thermage"
+            },
+            {
+                "name": "Smart Lipo",
+                "link": "thermage"
+            },
+            {
+                "name": "Vaser LipoSelection",
+                "link": "thermage"
+            },
+            {
+                "name": "LUX1540-fractional laser",
+                "link": "thermage"
+            },
+            {
+                "name": "LUXV-acne treatment",
+                "link": "thermage"
+            },
+            {
+                "name": "More...",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Health Clinic",
+        "link": "healthclinic",
+        "className": "bold",
+        "subNav": [
+            {
+                "name": "Injury Treatment",
+                "link": "injurytreatment"
+            },
+            {
+                "name": "Counseling",
+                "link": "counseling"
+            },
+            {
+                "name": "Long Term Treatment",
+                "link": "longtermtreatment"
+            },
+            {
+                "name": "Conditioning",
+                "link": "conditioning"
+            }
+        ]
+    },
+    {
+        "name": "DaySpa",
+        "link": "dayspa",
+        "className": "bold",
+        "subNav": [
+            {
+                "name": "Full Body Massage",
+                "link": "fullbodymassage"
+            },
+            {
+                "name": "Facials",
+                "link": "facials"
+            },
+            {
+                "name": "Waxing",
+                "link": "waxing"
+            },
+            {
+                "name": "Infrared Sauna Treatments",
+                "link": "infraredsaunatreatments"
+            },
+            {
+                "name": "More...",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Specials",
+        "link": "specials"
+    },
+    {
+        "name": "Ask Dr. Lee",
+        "link": "ask"
+    },
+    {
+        "name": "Education",
+        "link": "education"
+    },
+    {
+        "name": "Contact Us",
+        "link": "contact"
+    }
+    ]
+}

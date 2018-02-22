@@ -7,7 +7,6 @@ import data from '../../components/data/healthClinicData.json';
 export default class HealthClinic extends Component {
     constructor(props) {
         super(props);
-
     }
     componentDidMount() {
         document.title = "Biz MedSpa - Health Clinic Services";
