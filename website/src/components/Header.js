@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import '../styles/header.css'
 
+import healthClinicData from './data/healthClinicData.json';
+
 var jsonData = {
     'navigationLinks': [
         {
@@ -37,11 +39,31 @@ var jsonData = {
             'name': 'Health Clinic',
             'link': 'healthclinic',
             'className': 'bold',
+            'subNav': [
+                {
+                    name: 'Injury Treatment',
+                },
+                {
+                    name: 'Counseling'
+                },
+                {
+                    name: 'Long Term Treatment'
+                },
+                {
+                    name: 'Conditioning'
+                }
+            ]
         },
         {
             'name': 'DaySpa',
             'link': 'dayspa',
             'className': 'bold',
+            'subNav': [
+                {
+                    name: 'Injury Treatment',
+                    link: ''
+                },
+            ]
         },
         {
             'name': 'Specials',

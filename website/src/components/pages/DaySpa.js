@@ -1,10 +1,48 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 
 import Content from '../../components/Content.js';
-
+import data from '../../components/data/daySpa.json';
 
 export default class DaySpa extends Component {
+    componentDidMount() {
+        document.title = "Biz MedSpa - Day Spa Services";
+    }
+    renderServicesLinks(){
+        return Object.keys(data.services).map(key => {
+            return (
+                <Content
+                    minHeight="auto">
+                    <h3>{data.services[key].title}</h3>
+                    <Link to={'/dayspa/' + key}>
+                        <button className="black">More</button>
+                    </Link>
+                </Content>
+            )
+        });
+    }
+    renderSublink(){
+        var param = this.props.match.params.service;
+        return (
+            <div className="contentSection">
+                <div className="contentWrapper">
+                    <div className="gridLayout twoGrid">
+                        <Content title={data.services[param].title}></Content>
+                        <Content>
+                            <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
+                        </Content>
+                    </div>
+                </div>
+            </div>
+        );
+    }
     render() {
+        console.log(JSON.stringify(data));
+        var param = this.props.match.params.service;
+        if(param){
+            return this.renderSublink();
+        }
         return (
             <div className="contentSection">
                 <div className="contentWrapper">
@@ -21,71 +59,7 @@ export default class DaySpa extends Component {
                         </Content>
                     </div>
                     <div className="gridLayout fourGrid">
-                        <Content
-                            minHeight="auto">
-                            <h3>Full Body Massage</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Facials</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Waxing</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Infrared Sauna Treatments</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Foot Reflexology</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Hot Stone Therapy</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Aromatherapy Massage</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Salt Scrub and Massage</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Shiatsu Massage</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Basic Facial</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>BizMed Signature Facial</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Acne Treatment</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Ultrasonic Facial</h3>
-                            <button className="black">More</button>
-                        </Content>
+                        {this.renderServicesLinks()}
                     </div>
                 </div>
             </div>

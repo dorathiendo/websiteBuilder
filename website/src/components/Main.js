@@ -23,8 +23,8 @@ const Main = () => (
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/medspa' component={MedSpa}/>
-            <Route exact path='/healthclinic' component={HealthClinic}/>
-            <Route exact path='/dayspa' component={DaySpa}/>
+            <Route path='/healthclinic/:service?' component={HealthClinic}/>
+            <Route path='/dayspa/:service?' component={DaySpa}/>
             <Route exact path='/specials' component={Specials}/>
             <Route exact path='/ask' component={Ask}/>
             <Route exact path='/education' component={Education}/>

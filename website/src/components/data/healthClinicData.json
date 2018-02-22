@@ -1,0 +1,25 @@
+{
+    "linkInfo": {
+        "name": "Health Clinic",
+        "link": "healthclinic",
+        "className": "bold"
+    },
+    "services": {
+        "injurytreatment": {
+            "title": "Injury Treatment",
+            "info" : "<p>Injured employees can receive immediate walk-in treatment at our clinic Monday through Friday for minor or serious work-related injuries and illnesses. All treatment is provided by Dr. Lee and selected physicians experienced in occupational medicine. Bizmed Health Clinic staff will provide employers a Work Status report detailing the diagnosis, treatment plan, and any restrictions on the employee's ability to work.</p>"
+        },
+        "counseling": {
+            "title": "Counseling",
+            "info": "<p>An employee's work performance can be negatively affected by many factors arising at home or the workplace. Bizmed Health Clinic offers short-term confidential counseling to employees with personal challenges, stressors, or crises.</p>"
+        },
+        "longtermtreatment": {
+            "title": "Long Term Treatment",
+            "info": "<h3>Physical Therapy</h3><p>Occupational clinicians can aid in long-term treatment and rehabilitation for employees suffering from musculoskeletal injuries through physical therapy. Physical therapists will assess the damage and functional limitations caused by the injury, and provide clinic and in-home mobilization and exercise programs to help restore the patient's normal movement before a full return to work.</p><h3>Rehabilitation</h3><p>Occupational physical therapists are specially trained in helping patients overcome work-related injuries through education and conditioning. A physical therapist will help injured employees return to work quickly and safely by evaluating movement and function problems, and then practicing simulated tasks in a controlled setting.</p>"
+        },
+        "conditioning": {
+            "title": "Conditioning",
+            "info": "<h3>Work Conditioning</h3><p>Some employees may have a currently stable injury but show physical testing deficits that contribute to repeated injuries. The program will help patients overcome limitations and build the physical capacity to safely return to work functions. Clinicians provide strength and cardiovascular training, joint and muscle stretching, and body mechanics education to condition employees.</p><h3>Spinal Preconditioning</h3><p>Employees suffering unresolved pain from a back injury may lack confidence or physical ability to participate in a full work conditioning program. Bizmed Health Clinic specialists will provide pain management, exercise and stretching programs, and education to help patients enter work conditioning.</p><h3>Ergonomics</h3><p>Bizmed Health Clinic staff can provide an in-depth study and report of workplace safety for specific jobs, including safety factors such as environmental exposure, equipment protocols, and physical demands. This report can provide employers with invaluable information necessary to evaluate risk factors and comply with health and safety standards.</p>"
+        }
+    }
+}

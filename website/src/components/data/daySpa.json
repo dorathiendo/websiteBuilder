@@ -1,0 +1,56 @@
+{
+  "services": {
+    "fullbodymassage": {
+      "title": "Full Body Massage",
+      "info": "<p></p>"
+    },
+    "facials": {
+      "title": "Facials",
+      "info": "<p></p>"
+    },
+    "waxing": {
+      "title": "Waxing",
+      "info": "<p></p>"
+    },
+    "infraredsaunatreatments": {
+      "title": "Infrared Sauna Treatments",
+      "info": "<p></p>"
+    },
+    "footreflexology": {
+      "title": "Foot Reflexology",
+      "info": "<p></p>"
+    },
+    "hotstonetherapy": {
+      "title": "Hot Stone Therapy",
+      "info": "<p></p>"
+    },
+    "aromatherapy": {
+      "title": "Aromatherapy Massage",
+      "info": "<p>Soothing massage using different essential oils in combination with Swedish or Deep Tissue massage. The essential oils are specifically chosen by your masseuse to stimulate your olfactory (smell) system to achieve a desired emotional state of the mind. When you inhale the essential oils, a chemical signal is sent to the brain to therapeutically treat the body and mind.</p>"
+    },
+    "saltscrubmassage": {
+      "title": "Salt Scrub and Massage",
+      "info": "<p>This unique massage is performed by scrubbing your back using a special sea salt mixed with aromatic oils to exfoliate and hydrate the skin. After the salt scrub a shower is then taken followed by a relaxing and soothing massage.</p>"
+    },
+    "shiatsumassage": {
+      "title": "Shiatsu Massage",
+      "info": "<p>Massage performed by applying varying pressure with the fingers, elbows, or palms to specific areas on the skin to trigger points for therapeutic effects. When these specific areas are massaged, a tremendous feeling of relaxation results with increased circulation and lymphatic flow.</p>"
+},
+    "basicfacial": {
+      "title": "Basic Facial",
+      "info": "<p>Our facials are tailored to help make your facial skin look healthier, renew, rejuvenated, and more beautiful. Your face will undergo a steam treatment, cleansing and exfoliation, a hydrating treatment with a facial mask is then applied, concluding with a face and neck massage.</p>"
+      },
+    "signaturefacial": {
+      "title": "BizMed Signature Facial",
+      "info": "<p>This treatment combines our Basic Facial with the addition of skin care for your hands. Your hands will be treated with cleansing, exfoliation, hydrating lotions, and creams with heated gloves on both hands ending with a hand massage.</p>"
+},
+    "acnetreatment": {
+      "title": "Acne Treatment",
+      "info": "<p>This treatment utilizes lotions with alpha-hydroxy acids, urea peroxide, and salicylic acid for cleansing skin of whiteheads and blackheads. This treatment effectively inhibits excessive skin hormones with special organic acids, zinc, and vitamins. A skin refresher and purifying mask as well as a skin healing gel is also applied.</p>"
+},
+    "ultrasonicfacial": {
+      "title": "Ultrasonic Facial",
+      "info": "<p>This treatment is performed by applying sound waves to generate pressure on deep skin tissue. Deep cleansing, exfoliation, vapor spray, blackhead removal, and eyebrow shaping are also done during the procedure. The treatment ends with a face and neck massage.</p>"
+}
+  }
+}

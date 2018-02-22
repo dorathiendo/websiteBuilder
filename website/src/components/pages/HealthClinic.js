@@ -1,10 +1,50 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Content from '../../components/Content.js';
-
+import data from '../../components/data/healthClinicData.json';
 
 export default class HealthClinic extends Component {
+    constructor(props) {
+        super(props);
+
+    }
+    componentDidMount() {
+        document.title = "Biz MedSpa - Health Clinic Services";
+    }
+    renderServicesLinks(){
+        return Object.keys(data.services).map(key => {
+            return (
+                <Content
+                    minHeight="auto">
+                    <h3>{data.services[key].title}</h3>
+                    <Link to={'/healthclinic/' + key}>
+                        <button className="black">More</button>
+                    </Link>
+                </Content>
+            )
+        });
+    }
+    renderSublink(){
+        var param = this.props.match.params.service;
+        return (
+            <div className="contentSection">
+                <div className="contentWrapper">
+                    <div className="gridLayout twoGrid">
+                        <Content title={data.services[param].title}></Content>
+                        <Content>
+                            <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
+                        </Content>
+                    </div>
+                </div>
+            </div>
+        );
+    }
     render() {
+        var param = this.props.match.params.service;
+        if(param){
+          return this.renderSublink();
+        }
         return (
             <div className="contentSection">
                 <div className="contentWrapper">
@@ -16,31 +56,13 @@ export default class HealthClinic extends Component {
                             color="white">
                             <div>
                             <h2>Health Clinic Services</h2>
-                            <p>Our clinicians are trained to apply their aesthetic sensibilities to every treatment to bring out the natural beauty of your skin. Based on your needs we offer skin rejuvenation treatments such as Thermage and Omnilux lights, wrinkle fillers such as RADIESSE® and JUVÉDERM®, teeth whitening and facial resurfacing. Each visit to BizMed Spa will leave you looking and feeling refreshed, renewed, and rejuvenated.</p>
+                            <p>Bizmed Health Clinic provides treatment for work-related injuries and illnesses by occupational medicine specialists. Most occupational health care services are provided by primary care physicians as part of their general medical practices, so they are unable to devote the time and energy necessary to specialized rehabilitative care. Clinicians at Bizmed Health Clinic practice only occupational medicine so patients receive dedicated occupational medical care and services such as injury treatment, rehabilitation, work conditioning, and employee counseling assistance.</p>
+                                <p>Bizmed Health Clinic directly serves patients through early intervention in each employee injury, and also assists employers by managing all participants in the workers' compensation system and therefore reducing overall costs. We provide outstanding commitment, dedication, knowledge, and expertise to each occupational therapy case, and strive to return each employee to their position as safely and quickly as possible.</p>
                             </div>
                         </Content>
                     </div>
                     <div className="gridLayout fourGrid">
-                        <Content
-                            minHeight="auto">
-                            <h3>INJURY TREATMENT</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>COUNSELING</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LONG-TERM TREATMENT</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>CONDITIONING</h3>
-                            <button className="black">More</button>
-                        </Content>
+                        {this.renderServicesLinks()}
                     </div>
                 </div>
             </div>

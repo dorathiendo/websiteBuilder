@@ -4,6 +4,9 @@ import Content from '../../components/Content.js';
 
 
 export default class MedSpa extends Component {
+    componentDidMount() {
+        document.title = "Biz MedSpa - MedSpa Services";
+    }
     render() {
         return (
             <div className="contentSection">
