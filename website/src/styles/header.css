@@ -95,6 +95,11 @@
 .header ul.nav > li ul.subNav > li:hover {
   background-color: #eeeeee;
 }
+.header ul.nav > li ul.subNav.showSubNav {
+  position: inherit;
+  height: 100%;
+  left: 0;
+}
 .menuButton {
   float: right;
   display: none;

@@ -10,7 +10,8 @@ export default class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showSideNavigation: false
+            showSideNavigation: false,
+            showSubNavigation: false
         };
         this.openSideNavigation = this.openSideNavigation.bind(this);
     }
@@ -20,17 +21,25 @@ export default class Header extends Component {
         return data.navigationLinks.map(navLink => {
             var subNav = '', className = '', arrow  = '';
             if(navLink.subNav){
-                arrow = <img className="subNavArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVHhe7dHPTcMwGIfh3GEJLogxmAAJFmECxDZIrMEmjMEJ3KqfQCVt4/xxnOR5pJ8sX3zw2wAAAAAAAAAAAABNc3s46efucI7iIe0r7XV/I9dj2u7/Xva3gSLG92Gi5IkY8X+DohzHiInSzXGMWK8o92ltj8VEOe9UjNhzWpartI+0tsdiorS7FOMz7SYtmyj5JosRROlu8hhBlMuKxQiinFY8RhDlv9liBFF+zR4jiFJRjLDlKNXFCFuMUm2MsKUo1ccIW4iymBhhzVEWFyOsMcpiY4TrtLVEWXyMsIYoq4kRlhxldTHCEqOsNkZYUpTVxwhLiLKZGKHmKJuLEWqMstkYoaYom48RaogixpE5o4hxwhxRxLigZBQxOioRRYxMU0Z5ShOjhymiiDHQmFHEGMkYUcQY2ZAoYkykTxQxJpYTRYxCukR5TxOjoC5RTk2MifSJIsbEcqKIUUiXKGIUdi6KGDNpiyLGzP5GEaMSuyhvaWIAAAAAAAAAAAAAZGiaHx2luEHL0nIVAAAAAElFTkSuQmCC"/>
+                arrow = <img className="subNavArrow" src="/images/arrow_down.png" onClick={((e) => this.openSubNav(e))}/>
                 subNav = navLink.subNav.map((subNav) => <li><a href={'/'+navLink.link+'/'+subNav.link}>{subNav.name}</a></li>);
             }
             var className = (navLink.className) ? navLink.className : '';
             var link = (navLink.link) ? navLink.link : '';
             return <li className={className}>
                 <Link to={'/' + link}>{navLink.name}</Link>
+                {arrow}
                 <ul className="subNav">{subNav}</ul>
-                    {arrow}
                 </li>
         });
+    }
+    openSubNav(e){
+        var subNavEl =  e.target.parentElement.getElementsByClassName('subNav')[0];
+        if(subNavEl.className.indexOf('showSubNav') > 0){
+            subNavEl.className = 'subNav';
+        } else {
+            subNavEl.className = 'subNav showSubNav';
+        }
     }
     openSideNavigation(){
         this.setState(prevState => ({
@@ -45,14 +54,14 @@ export default class Header extends Component {
                     <li>
                         <div className="menuButton"
                                 onClick={this.openSideNavigation}>
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVHhe7duxjUIxFEXBH1IABSC0BVAAbdATLdATPS2WY4dIPkIz0okc3vT5AAAAAADgR1yV6TQ6/pXpPlo+aE8GiWWQWAaJZZBYBollkFgGiTUHeSvTbQQAAAAAAABAx0OZzqPl9YP25AwolkFiGSSWQWIZJJZBYhkklkFizUGeynQZAQAAAAAAANDxUqa/0fL6QXtyBhTLILEMEssgsQwSyyCxDBLLILHmIKv/0trT/KcOAAAAAAB80XF8AFB/e7hE7WJ2AAAAAElFTkSuQmCC"/>
+                            <img src="/images/menu.png"/>
                         </div>
                     </li>
                     {this.renderSubNav()}
                 </ul>
                 <div className="menuButton"
                      onClick={this.openSideNavigation}>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVHhe7duxjUIxFEXBH1IABSC0BVAAbdATLdATPS2WY4dIPkIz0okc3vT5AAAAAADgR1yV6TQ6/pXpPlo+aE8GiWWQWAaJZZBYBollkFgGiTUHeSvTbQQAAAAAAABAx0OZzqPl9YP25AwolkFiGSSWQWIZJJZBYhkklkFizUGeynQZAQAAAAAAANDxUqa/0fL6QXtyBhTLILEMEssgsQwSyyCxDBLLILHmIKv/0trT/KcOAAAAAAB80XF8AFB/e7hE7WJ2AAAAAElFTkSuQmCC"/>
+                    <img src="/images/menu.png"/>
                 </div>
             </div>
         );
