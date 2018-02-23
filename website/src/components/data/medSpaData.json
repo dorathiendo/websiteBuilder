@@ -1,0 +1,37 @@
+{
+  "services": {
+    "thermage": {
+      "title": "Thermage",
+      "info": "Thermage is a non-invasive procedure that can help tighten and contour your skin without injections or surgery. Thermage employs radiofrequency technology to heat the deep layers of skin while keeping the top layer cool and undamaged. The heat will stimulate your body's natural collagen production, which softens and smooths skins while making it appear tighter and younger, Thermage can be used on facial wrinkles and loose skin, as well as on other areas of the body prone to skin sagging such as the stomach, buttocks, knees, legs, arms, and hands. This is the only treatment appropriate for body-shaping that BizMed Spa offers. You should begin to see results within days of treatment, and they will continually improve over the months following treatment and last up to several years."
+    },
+    "liposuction": {
+      "title": "Liposuction",
+      "info": "At Biz Med Spa, we offer the people of Fremont, CA and beyond the latest, most state-of-the-art liposuction procedures including Smart Liposuction, Vaser Liposuction and Velashape. At our liposuction clinic, we follow the trends in less-invasive liposuction procedures because Biz Med Spa believes in the mission to provide liposuction with increasingly less trauma to body tissue. Call Biz Med Spa today to speak to our liposuction specialist who can answer all your questions about this revolution in weight-loss surgery."
+    },
+    "smartlipo": {
+      "title": "Smart Lipo",
+      "info": "Sometimes, all the diet and exercise in the world can still leave you with parts of your body that hold too much fat. But, liposuction might seem like an extreme solution, and many of us will avoid surgery if we can help it.<br/>If this is the case, then Smart Lipo might be right for you. Using only a local anesthetic during a 45–minute in–office procedure, we target pockets of unwanted fat with a laser, immediately dissolving the cells into fluid. This fluid is then released and drained out of your body naturally. And, the laser also stimulates collagen production, resulting in tighter, smoother skin in the treated areas.<br/>Because Smart Lipo is a non–invasive procedure, it is ideal for many areas of the body, including: Arms<br/>Breasts (male)<br/>Buttocks<br/>Chin<br/>Face<br/>Hips<br/>Thighs<br/>Come in for a consultation, and we can discuss if you're a good candidate for Smart Lipo."
+    },
+    "vaserliposelection": {
+      "title": "Vaser LipoSelection",
+      "info": "..."
+    },
+    "lux1540fractionallaser": {
+      "title": "LUX1540-FRACTIONAL LASER",
+      "info": "..."
+    },
+    "luxvacnetreatment": {
+      "title": "LUXV-ACNE TREATMENT",
+      "info": "..."
+    },
+    "omniluxlights": {
+      "title": "OMNILUX LIGHTS",
+      "info": "..."
+    },
+    "botox": {
+      "title": "BOTOX",
+      "info": "..."
+    }
+  }
+
+}

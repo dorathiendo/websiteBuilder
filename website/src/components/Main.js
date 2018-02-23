@@ -12,17 +12,11 @@ import Ask from './pages/Ask';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
-
 const Main = () => (
     <main>
         <Switch>
             <Route exact path='/' component={Home}/>
-            <Route exact path='/medspa' component={MedSpa}/>
+            <Route path='/medspa/:service?' component={MedSpa}/>
             <Route path='/healthclinic/:service?' component={HealthClinic}/>
             <Route path='/dayspa/:service?' component={DaySpa}/>
             <Route exact path='/specials' component={Specials}/>
