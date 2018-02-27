@@ -19,13 +19,17 @@ export default class Content extends Component {
         if(this.props.minHeight){
             styles.minHeight = this.props.minHeight;
         }
+        if(this.props.border){
+            styles.border = this.props.border;
+        }
         return styles
     }
 
     render() {
+        var className = (this.props.className) ? this.props.className : '';
         return (
             <div>
-                <div className="content" style={this.setStyle()}>
+                <div className={"content " + className} style={this.setStyle()}>
                     {(this.props.title) ? <h2>{this.props.title}</h2> : ''}
                     {this.props.children}
                 </div>

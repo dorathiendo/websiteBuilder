@@ -4,6 +4,7 @@
         "link": "healthclinic",
         "className": "bold"
     },
+    "headerImageSrc": "https://image.shutterstock.com/z/stock-photo-patient-at-the-physiotherapy-doing-physical-therapy-exercises-with-his-therapist-114098563.jpg",
     "services": {
         "injurytreatment": {
             "title": "Injury Treatment",

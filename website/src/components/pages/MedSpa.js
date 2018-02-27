@@ -2,24 +2,34 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-import Content from '../../components/Content.js';
+import Content from '../../components/Content';
+import ServiceLink from '../../components/ServiceLink';
 import data from '../../components/data/medSpaData.json'
 
 export default class MedSpa extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        showContent: ''
+      }
+    }
     renderSublink(){
       var param = this.props.match.params.service
       var serviceData = data.services[param];
       return (
         <div className="contentSection">
             <div className="contentWrapper">
-              <div className="gridLayout twoGrid">
-                <Content>
+                <Content
+                  backgroundColor="white"
+                  minHeight="auto"
+                  color="black">
                   <h2>{serviceData.title}</h2>
                 </Content>
-                <Content>
-                  <p>{serviceData.info}</p>
+                <Content
+                  minHeight="auto">
+                  <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
                 </Content>
-              </div>
+
               </div>
         </div>
       )
@@ -27,12 +37,10 @@ export default class MedSpa extends Component {
     renderServiceLinks(){
       return Object.keys(data.services).map(key => {
         return (
-          <Content
-              minHeight="auto">
-              <h3>{data.services[key].title}</h3>
-              <Link to={'/medspa/' + key}>
-                <button className="black">More</button>
-              </Link>
+          <Content>
+              <ServiceLink title={data.services[key].title}>
+                <div dangerouslySetInnerHTML={{__html: data.services[key].info}}></div>
+              </ServiceLink>
           </Content>
         )
       });
@@ -47,7 +55,7 @@ export default class MedSpa extends Component {
                   <div className="contentWrapper">
                       <div>
                           <Content
-                              image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
+                              image={data.headerImageSrc}
                               backgroundColor="rgba(0,0,0,0.5)"
                               padding="50px 10%"
                               color="white">

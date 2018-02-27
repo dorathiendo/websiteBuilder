@@ -9,7 +9,7 @@ const Home = () => (
     <div className="contentSection">
         <div className="contentWrapper">
             <Content
-                image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
+                image="https://image.shutterstock.com/z/stock-photo-beauty-portrait-of-female-face-with-natural-skin-521859244.jpg"
                 backgroundColor="rgba(0,0,0,0.5)"
                 color="white"
                 >
@@ -19,31 +19,33 @@ const Home = () => (
             </Content>
             <Content>
                 <ImageSlider>
-                    <img src="https://farm5.staticflickr.com/4621/26458629008_07d1f6015b_b.jpg" />
+                    <img src="https://image.shutterstock.com/z/stock-photo-beautiful-young-woman-with-clean-fresh-skin-touch-own-face-facial-treatment-cosmetology-515018698.jpg" />
                     <img src="https://farm5.staticflickr.com/4749/39432780025_86e443361c_b.jpg" />
                     <img src="https://farm5.staticflickr.com/4626/39618908264_4d09ac1167_b.jpg" />
                 </ImageSlider>
             </Content>
             <div className="gridLayout threeGrid">
-                <Content>
+                <Content
+                  color="white">
                     <h2>Thermage</h2>
                     <p>Thermage is a non-invasive procedure that can help tighten and contour your skin without injections or surgery. Thermage employs radiofrequency technology to heat the deep layers of skin while keeping the top layer cool and undamaged.</p>
-                    <button className="black">More</button>
+                    <button className="white">More</button>
                 </Content>
                 <Content
-                    title="LUX1540-Fractional Laser">
+                  color="white">
+                    <h2>LUX1540-Fractional Laser</h2>
                     <p>LUX 1540 Fractional Laser is a dye-free skin resurfacing treatment designed to reduce the appearance of skin imperfections such as lines, wrinkles, acne scars, sun damage, hyperpigmentation, and stretch marks.</p>
-                    <button className="black">More</button>
+                    <button className="white">More</button>
                 </Content>
                 <Content
-                    title="BOTOX">
+                  color="white">
+                    <h2>Botox</h2>
                     <p>BOTOX® Cosmetic is an injection administered to muscles in the forehead to reduce the appearance of moderate to severe frown lines between the eyebrows. BOTOX® Cosmetic is a prescription medication that blocks nerve impulses to the muscles between the brows, reducing wrinkle-causing muscle activity.</p>
-                    <button className="black">More</button>
+                    <button className="white">More</button>
                 </Content>
             </div>
             <Content
-                image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
-                backgroundColor="rgba(0,0,0,0.5)"
+                backgroundColor="rgba(255,255,255,0.1)"
                 minHeight="auto">
                 <div>
                 <img className="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO2SURBVHhe7d3NS1RhFMdxM8EwS4q2vZFEtmgZgpQE0SYIW7QJgv6AWrjoZVetWropob1t3JWriMgSapEUtqigF2gbVqSQYDH2vd4j0aBzx/s8czsz9/eBwzW895x5zi+YjNI2ERERERGpS6VS6VxaWtpW1uL8m20V/wcvYgcvYph6TM3y69JjD/PUCz68znWfraqxGNZOXWXg9+RFyOrYzyJ1mw+7bXXxMWALdT8dKfVgXzPUblthPPTeSON76RhZD/b2jkuPrTIOml5O20tO47bKcDRL3sB/pH0lD/aX6LeVhqHRsPWVAOxxzFYahl6TaUsJQSDfuHTYWvOjkb7OiIRd7rW15kOD5CtwiYR9Dthq86FHT9pKYiCQk7bafOihQCJSIM4oEGcUiDMKxBkF4owCcUaBOKNAMrCgn9QnPpzm+pL6TC2mn42P3gqkGkuZoi5SO+2Y/+CWDj53iLpEPUmfioN+CmQFy/iYZyE8c5h6Y22CKJC/JllG7n+qw7Oj1ieIAgFLeMqly46UiwKJhAXMUau+V6yHAomEBVywowRRIBFw+Fmq044SRIFEwOFH7BjBFEgEHP6oHSOYAgnEwX9xWdefrHhmK9VHDVCneP7MSvHrB1yD0ae0gczYETJx70HqIfXbHm+YMgcyYUeoifu2U1/ssYYrcyB1/StBbj2fPlGMMgcyakeoifuu2SOFUCAZuO+mPVIIBZJBgRREgTijQJxRIAXjYO+pOzXqrB2hJu47XfXcWpX8P8Fg9GnZQO7aSywE86ZsdBAFEgHj2pk3n04Oo0AiYFafjQ2mQCJg1jkbG0yBRMCsERsbTIFEwKwob+gJBRKIUdHe0BMKJBBzor2hJxRIIOZEe0NPtHIgr6grNeqEHaEm7huseq66HtnIKOjXmoFk4eD6uyxPFIgzCsQZBeKMAnFGgTijQJxRIM4oEGcUiDMKxBkF4owCcUaBOKNAnFEgzigQZxSIMwrEGQXijAJxRoE408qBdKWtmovjQI7Z6PxoMmf9mobjQPbb6PzoM522ax4eA2HWApdNNjo/Gt1IWzYPp4HU9Q1xMtGol2rYd3tuBI+BYMjGhuOF37KmTcFbIMx5xmWDjQ1Hs26avl7u3gR4rR+4jGcV973l2lDMSL4ZZ6+tMh567yriAK2EfX2ljtgK42NG8oVi8jursjxR1sSKnlPF/KB7BvVTY1Ty40TFsI8FaoIPh6h47xn1YmgHtYcXMcD1eFmL8w9yPcA1yjduFhERERERKU5b2x8W/+mL3E3waAAAAABJRU5ErkJggg=="/>
@@ -57,4 +59,3 @@ const Home = () => (
 );
 
 export default Home;
-

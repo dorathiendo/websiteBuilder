@@ -11,23 +11,23 @@
             },
             {
                 "name": "Liposuction",
-                "link": "thermage"
+                "link": "liposuction"
             },
             {
                 "name": "Smart Lipo",
-                "link": "thermage"
+                "link": "smartlipo"
             },
             {
                 "name": "Vaser LipoSelection",
-                "link": "thermage"
+                "link": "vaserliposelection"
             },
             {
                 "name": "LUX1540-fractional laser",
-                "link": "thermage"
+                "link": "lux1540fractionallaser"
             },
             {
                 "name": "LUXV-acne treatment",
-                "link": "thermage"
+                "link": "luxvacnetreatment"
             },
             {
                 "name": "More...",
@@ -98,8 +98,9 @@
         "link": "education"
     },
     {
-        "name": "Contact Us",
-        "link": "contact"
+        "name": "Book an Appointment",
+        "link": "appointment",
+        "className": "bold"
     }
     ]
 }

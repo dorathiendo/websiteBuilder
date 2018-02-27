@@ -6,6 +6,14 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   letter-spacing: 0.05em;
+  /* background: linear-gradient(rgb(87, 94, 109, 0.8), rgb(87, 94, 109, 0.8)),
+    url("https://image.shutterstock.com/z/stock-photo-green-leaf-pattern-on-the-surface-449893840.jpg"); */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 a {
@@ -15,5 +23,6 @@ a {
 
 
 main {
-  padding-top: 30px;
+  padding-top: 80px;
+  min-height: 1000px;
 }

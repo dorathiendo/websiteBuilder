@@ -9,7 +9,7 @@ export default class Ask extends Component {
             <div className="contentSection">
                 <div className="contentWrapper">
                     <Content
-                        image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
+                        image="https://image.shutterstock.com/z/stock-photo-pile-of-questions-marks-d-render-541688104.jpg"
                         backgroundColor="rgba(0,0,0,0.5)"
                         padding="50px 10%"
                         color="white">

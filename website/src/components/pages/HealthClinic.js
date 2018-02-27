@@ -18,26 +18,31 @@ export default class HealthClinic extends Component {
                     minHeight="auto">
                     <h3>{data.services[key].title}</h3>
                     <Link to={'/healthclinic/' + key}>
-                        <button className="black">More</button>
+                        <button className="white">More</button>
                     </Link>
                 </Content>
             )
         });
     }
     renderSublink(){
-        var param = this.props.match.params.service;
-        return (
-            <div className="contentSection">
-                <div className="contentWrapper">
-                    <div className="gridLayout twoGrid">
-                        <Content title={data.services[param].title}></Content>
-                        <Content>
-                            <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
-                        </Content>
-                    </div>
-                </div>
-            </div>
-        );
+      var param = this.props.match.params.service
+      var serviceData = data.services[param];
+      return (
+        <div className="contentSection">
+            <div className="contentWrapper">
+                <Content
+                  backgroundColor="white"
+                  minHeight="auto"
+                  color="black">
+                  <h2>{serviceData.title}</h2>
+                </Content>
+                <Content
+                  minHeight="auto">
+                  <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
+                </Content>
+              </div>
+        </div>
+      )
     }
     render() {
         var param = this.props.match.params.service;
@@ -49,7 +54,7 @@ export default class HealthClinic extends Component {
                 <div className="contentWrapper">
                     <div>
                         <Content
-                            image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
+                            image={data.headerImageSrc}
                             backgroundColor="rgba(0,0,0,0.5)"
                             padding="50px 10%"
                             color="white">

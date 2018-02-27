@@ -10,7 +10,7 @@ export default class Education extends Component {
                 <div className="contentWrapper">
                     <div>
                         <Content
-                            image="https://farm5.staticflickr.com/4609/39525471044_458999e8e0_z.jpg"
+                            image="https://image.shutterstock.com/z/stock-photo-education-concept-books-on-the-desk-in-the-auditorium-622572191.jpg"
                             backgroundColor="rgba(0,0,0,0.5)"
                             padding="50px 10%"
                             color="white">
@@ -20,26 +20,32 @@ export default class Education extends Component {
                             </div>
                         </Content>
                     </div>
+                    <Content
+                      className="videoSection">
+                      <h2>Educational Videos</h2>
+                      <p>We want you be informed about what we do.  We've collected a number of videos on a wide range of sujects for you to view.</p>
+                      <div className="video">Play Video</div>
+                    </Content>
                     <div className="gridLayout fourGrid">
                         <Content
                             minHeight="auto">
                             <h3>For Patients</h3>
-                            <button className="black">More</button>
+                            <button className="white">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
                             <h3>Consent Forms</h3>
-                            <button className="black">More</button>
+                            <button className="white">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
                             <h3>Dr. Lee and Biz MedSpa</h3>
-                            <button className="black">More</button>
+                            <button className="white">More</button>
                         </Content>
                         <Content
                             minHeight="auto">
                             <h3>Common Side Effects</h3>
-                            <button className="black">More</button>
+                            <button className="white">More</button>
                         </Content>
                     </div>
                 </div>

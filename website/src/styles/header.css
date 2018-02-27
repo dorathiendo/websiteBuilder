@@ -40,7 +40,8 @@
     top: 0;
     height: 100%;
     margin: 0;
-    padding: 20px 50px;
+    padding: 50px 0;
+    width: 100%;
     background-color: #eeeeee;
   }
   .header ul.nav > li {
@@ -61,6 +62,11 @@
 .header ul.nav > li.bold {
   font-weight: 700;
 }
+.header ul.nav > li.border {
+  border: 3px solid #83a4d4;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
 @media screen and (min-width: 1129px) {
   .header ul.nav > li:hover ul.subNav {
     height: 500px;
@@ -72,11 +78,6 @@
   margin-left: 10px;
 }
 .header ul.nav > li ul.subNav {
-  -webkit-transition: height 300ms linear 0s;
-  -moz-transition: height 300ms linear 0s;
-  -ms-transition: height 300ms linear 0s;
-  -o-transition: height 300ms linear 0s;
-  transition: height 300ms linear 0s;
   height: 0;
   position: absolute;
   overflow: hidden;
@@ -114,7 +115,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 30px;
   }
 }
 @media screen and (min-width: 1129px) {

@@ -1,9 +1,13 @@
+// less-watch-compiler styles styles
+
 .header {
   position: fixed;
   top:0;
   left:0;
   width: 100%;
   z-index: 1;
+
+  
 
   background: white;
   //-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
@@ -38,7 +42,8 @@
       top: 0;
       height: 100%;
       margin: 0;
-      padding: 20px 50px;
+      padding: 50px 0;
+      width: 100%;
       background-color: #eeeeee;
       & > li {
         padding: 10px 0 !important;
@@ -63,6 +68,11 @@
       &.bold {
         font-weight: 700;
       }
+      &.border {
+        border: 3px solid #83a4d4;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
       @media screen and (min-width: 1129px){
         &:hover {
           ul.subNav {
@@ -76,11 +86,11 @@
         margin-left: 10px;
       }
       ul.subNav {
-        -webkit-transition: height 300ms linear 0s;
-        -moz-transition: height 300ms linear 0s;
-        -ms-transition: height 300ms linear 0s;
-        -o-transition: height 300ms linear 0s;
-        transition: height 300ms linear 0s;
+        // -webkit-transition: height 300ms linear 0s;
+        // -moz-transition: height 300ms linear 0s;
+        // -ms-transition: height 300ms linear 0s;
+        // -o-transition: height 300ms linear 0s;
+        // transition: height 300ms linear 0s;
         height: 0;
         position: absolute;
         overflow: hidden;
@@ -124,7 +134,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 30px;
   }
 }
 

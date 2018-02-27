@@ -1,3 +1,6 @@
+.contentSection {
+  color: white;
+}
 .contentSection h1 {
   font-size: 2em;
   text-transform: uppercase;
@@ -21,7 +24,7 @@
 }
 @media screen and (max-width: 1129px) {
   .contentSection .contentWrapper .gridLayout.fourGrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .contentSection .contentWrapper .gridLayout.twoGrid {
@@ -29,6 +32,32 @@
 }
 .contentSection .contentWrapper .alignLeft .content {
   justify-content: flex-start;
+}
+.contentSection .contentWrapper .hiddenContent {
+  position: absolute !important;
+  overflow: auto;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  min-height: auto !important;
+  background: white;
+  color: black;
+  -webkit-transition: all 300ms linear 0s;
+  -moz-transition: all 300ms linear 0s;
+  -ms-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+.contentSection .contentWrapper .hiddenContent.showHiddenContent {
+  opacity: 1;
+  z-index: 0;
+}
+.contentSection .contentWrapper .hiddenContent p {
+  text-align: left !important;
+  font-size: 0.8em !important;
 }
 .contentSection .contentWrapper .content {
   background-repeat: no-repeat;
@@ -48,6 +77,11 @@
 }
 .contentSection .contentWrapper .content.white {
   color: white;
+}
+.contentSection .contentWrapper .content.videoSection .video {
+  background-color: black;
+  width: 80vw;
+  height: 600px;
 }
 .contentSection .contentWrapper .content h2 {
   margin: 0;
@@ -72,7 +106,6 @@
   font-size: 0.9em;
   margin: 0 10%;
   padding: 20px;
-  border-radius: 5px;
   text-align: center;
 }
 .contentSection .contentWrapper .content form {
@@ -101,6 +134,8 @@
   font-size: 0.8em;
   font-weight: 700;
   cursor: pointer;
+  border: 3px solid white;
+  color: white;
 }
 .contentSection .contentWrapper .content button.black {
   border: 3px solid black;
@@ -109,6 +144,10 @@
 .contentSection .contentWrapper .content button.white {
   border: 3px solid white;
   color: white;
+}
+.contentSection .contentWrapper .content button.close {
+  float: right;
+  padding: 5px 10px;
 }
 .contentSection .contentWrapper .content button:hover {
   opacity: 0.5;

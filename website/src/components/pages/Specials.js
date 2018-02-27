@@ -16,78 +16,23 @@ export default class Specials extends Component {
                             color="white">
                             <div>
                             <h2>Specials</h2>
-                            <p>Our clinicians are trained to apply their aesthetic sensibilities to every treatment to bring out the natural beauty of your skin. Based on your needs we offer skin rejuvenation treatments such as Thermage and Omnilux lights, wrinkle fillers such as RADIESSE® and JUVÉDERM®, teeth whitening and facial resurfacing. Each visit to BizMed Spa will leave you looking and feeling refreshed, renewed, and rejuvenated.</p>
+                            <p>View our monthly specials to help you look your best, for less.</p>
                             </div>
                         </Content>
                     </div>
                     <div className="gridLayout fourGrid">
-                        <Content
-                            minHeight="auto">
-                            <h3>Thermage</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Liposuction</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Smart Lipo</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>Vaser LipoSelection</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>VelaShape</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LUX1540-FRACTIONAL LASER</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LUXV-ACNE TREATMENT</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>OMNILUX LIGHTS</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>BOTOX</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>BEYOND WHITE TEETH WHITENING</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>RADIESSE</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>JUVEDERM</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        <Content
-                            minHeight="auto">
-                            <h3>LATISSE</h3>
-                            <button className="black">More</button>
-                        </Content>
-                        
-
+                      <Content>
+                        <p style={{border: '3px solid white'}}>Get prepared for Spring Smart Lipo or Viso Lipo!</p>
+                      </Content>
+                      <Content>
+                        <p style={{border: '3px solid white'}}>Muffin top, love handles, or potbelly - all sound harmless enough. But these bothersome bumps can really put a lump in your self-esteem.</p>
+                      </Content>
+                      <Content>
+                        <p style={{border: '3px solid white'}}>Spring into a minimally invasive, FDA approved, relatively painless, and safe procedure to remove unwanted body fat and start winning the battle of the bulge with Smart Lipo or Vaser Lipo, which destroy fat and tighten skin. Get the slim down look you want today, don't leave it to fat chance tomorrow! Call us and find out about our nice trim deals.</p>
+                      </Content>
+                      <Content>
+                        <p style={{border: '3px solid white'}}>Get your skin ready for summer. Call us and schedule your appointment today. BizMed Spa 510-226-8832</p>
+                      </Content>
                     </div>
                 </div>
             </div>
