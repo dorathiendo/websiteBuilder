@@ -1,75 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Content from '../../components/Content.js';
+import Page from '../../components/Page';
 import data from '../../components/data/healthClinicData.json';
 
 export default class HealthClinic extends Component {
-    constructor(props) {
-        super(props);
-    }
-    componentDidMount() {
-        document.title = "Biz MedSpa - Health Clinic Services";
-    }
-    renderServicesLinks(){
-        return Object.keys(data.services).map(key => {
-            return (
-                <Content
-                    minHeight="auto">
-                    <h3>{data.services[key].title}</h3>
-                    <Link to={'/healthclinic/' + key}>
-                        <button className="white">More</button>
-                    </Link>
-                </Content>
-            )
-        });
-    }
-    renderSublink(){
-      var param = this.props.match.params.service
-      var serviceData = data.services[param];
-      return (
-        <div className="contentSection">
-            <div className="contentWrapper">
-                <Content
-                  backgroundColor="white"
-                  minHeight="auto"
-                  color="black">
-                  <h2>{serviceData.title}</h2>
-                </Content>
-                <Content
-                  minHeight="auto">
-                  <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
-                </Content>
-              </div>
-        </div>
-      )
-    }
     render() {
-        var param = this.props.match.params.service;
-        if(param){
-          return this.renderSublink();
-        }
+        let serviceParam = (this.props.match.params.service) ? this.props.match.params.service: null;
         return (
-            <div className="contentSection">
-                <div className="contentWrapper">
-                    <div>
-                        <Content
-                            image={data.headerImageSrc}
-                            backgroundColor="rgba(0,0,0,0.5)"
-                            padding="50px 10%"
-                            color="white">
-                            <div>
-                            <h2>Health Clinic Services</h2>
-                            <p>Bizmed Health Clinic provides treatment for work-related injuries and illnesses by occupational medicine specialists. Most occupational health care services are provided by primary care physicians as part of their general medical practices, so they are unable to devote the time and energy necessary to specialized rehabilitative care. Clinicians at Bizmed Health Clinic practice only occupational medicine so patients receive dedicated occupational medical care and services such as injury treatment, rehabilitation, work conditioning, and employee counseling assistance.</p>
-                                <p>Bizmed Health Clinic directly serves patients through early intervention in each employee injury, and also assists employers by managing all participants in the workers' compensation system and therefore reducing overall costs. We provide outstanding commitment, dedication, knowledge, and expertise to each occupational therapy case, and strive to return each employee to their position as safely and quickly as possible.</p>
-                            </div>
-                        </Content>
-                    </div>
-                    <div className="gridLayout fourGrid">
-                        {this.renderServicesLinks()}
-                    </div>
-                </div>
-            </div>
+            <Page
+                pageName="Health Services"
+                serviceParam={serviceParam}
+                data={data}
+                ></Page>
         );
     }
 }
