@@ -13,10 +13,13 @@ module.exports = options => {
             {
               loader: 'babel-loader',
               options: {
+                babelrc: false,
                 cacheDirectory: true,
+                presets: ["env", "react"],
+                plugins: ["transform-es2015-modules-amd"]
               },
             },
-          ],
+          ]
         },
       ],
     },

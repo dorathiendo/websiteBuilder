@@ -4,11 +4,15 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
   background: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9em;
-  padding: 30px;
+  padding: 25px;
 }
 .header > * {
   display: inline-block;
@@ -16,7 +20,7 @@
 .header h1 {
   text-align: center;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .header ul.nav {
   font-weight: 300;
@@ -55,8 +59,7 @@
 .header ul.nav > li {
   text-align: center;
   display: inline-block;
-  margin: 0 10px;
-  padding: 0 15px;
+  padding: 0 30px;
   position: relative;
 }
 .header ul.nav > li.bold {
@@ -79,9 +82,10 @@
 }
 .header ul.nav > li ul.subNav {
   height: 0;
+  width: 100%;
   position: absolute;
   overflow: hidden;
-  left: -30px;
+  left: 0;
   margin: 0;
   padding: 10px 0 0 0;
   list-style-type: none;

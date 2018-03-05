@@ -4,11 +4,10 @@ import '../styles/content.css';
 export default class Content extends Component {
     setStyle() {
         var styles = {}
-        if(this.props.backgroundColor){
-            styles.backgroundColor = this.props.backgroundColor
-        }
         if(this.props.image) {
-            styles.backgroundImage = 'linear-gradient(rgb(87, 94, 109, 0.5), rgb(87, 94, 109, 0.5)), url("' + this.props.image + '")';
+            // styles.background = 'linear-gradient(rgb(87, 94, 109, 0.5), rgb(87, 94, 109, 0.5)), url("' + this.props.image + '")';
+        } else if(this.props.backgroundColor){
+            styles.backgroundColor = this.props.backgroundColor;
         }
         if(this.props.color){
             styles.color = this.props.color;
@@ -26,12 +25,16 @@ export default class Content extends Component {
     }
 
     render() {
-        var className = (this.props.className) ? this.props.className : '';
+        var className = (this.props.className) ? 'content ' + this.props.className : 'content';
+        var styles = this.setStyle();
         return (
             <div>
-                <div className={"content " + className} style={this.setStyle()}>
+                <div className={className} style={styles}>
+                    <img className="backgroundImage" src={this.props.image} />
+                    <div className="childrenWrapper">
                     {(this.props.title) ? <h2>{this.props.title}</h2> : ''}
                     {this.props.children}
+                    </div>
                 </div>
             </div>
 

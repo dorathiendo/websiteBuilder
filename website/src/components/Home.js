@@ -1,9 +1,6 @@
 import React from 'react';
 
 import Content from '../components/Content';
-import ImageSlider from '../components/ImageSlider';
-
-
 
 const Home = () => (
     <div className="contentSection">
@@ -11,19 +8,12 @@ const Home = () => (
             <Content
                 image="https://image.shutterstock.com/z/stock-photo-beauty-portrait-of-female-face-with-natural-skin-521859244.jpg"
                 backgroundColor="rgba(0,0,0,0.5)"
-                color="white"
-                >
+                color="white">
                 <h1>Welcome to Biz MedSpa</h1>
                 <p>Biz Medspa is a medical spa and treatment center where you can find an array of therapies to rejuvenate and refresh your skin. We are a physican-based facility that focuses on caring for and treating the whole patient, so each time you meet with a Biz Medspa clinician you can be sure that we are receiving the best recommendations and care available. We also provide occupational health care for early treatment of employee injuries.</p>
                 <button className="white">Learn More</button>
             </Content>
-            <Content>
-                <ImageSlider>
-                    <img src="https://image.shutterstock.com/z/stock-photo-beautiful-young-woman-with-clean-fresh-skin-touch-own-face-facial-treatment-cosmetology-515018698.jpg" />
-                    <img src="https://farm5.staticflickr.com/4749/39432780025_86e443361c_b.jpg" />
-                    <img src="https://farm5.staticflickr.com/4626/39618908264_4d09ac1167_b.jpg" />
-                </ImageSlider>
-            </Content>
+
             <div className="gridLayout threeGrid">
                 <Content
                   color="white">

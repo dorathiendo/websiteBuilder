@@ -22,6 +22,10 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.5",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -30,5 +34,14 @@
     "less": "^3.0.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-es2015-modules-umd"
+    ]
   }
 }

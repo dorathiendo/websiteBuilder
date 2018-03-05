@@ -68,6 +68,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      // background: linear-gradient(rgba(87, 94, 109, 0.5), rgba(87, 94, 109, 0.5)), url(https://image.shutterstock.com/z/stock-photo-beauty-portrait-of-female-face-with-natural-skin-521859244.jpg);
 
       min-height: 400px;
       justify-self: center;
@@ -80,6 +81,18 @@
       align-content: center;
       position: relative;
       padding: 50px 0;
+
+      .backgroundImage {
+        position: absolute;
+        top: 0;
+      }
+
+      .childrenWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+      }
 
       &.white {
         color: white;
@@ -159,6 +172,7 @@
         cursor: pointer;
         border: 3px solid white;
         color: white;
+        width: max-content;
         &.black {
           border: 3px solid black;
           color: black;

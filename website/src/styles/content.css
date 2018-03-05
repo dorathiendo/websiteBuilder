@@ -75,6 +75,16 @@
   position: relative;
   padding: 50px 0;
 }
+.contentSection .contentWrapper .content .backgroundImage {
+  position: absolute;
+  top: 0;
+}
+.contentSection .contentWrapper .content .childrenWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
 .contentSection .contentWrapper .content.white {
   color: white;
 }
@@ -136,6 +146,7 @@
   cursor: pointer;
   border: 3px solid white;
   color: white;
+  width: max-content;
 }
 .contentSection .contentWrapper .content button.black {
   border: 3px solid black;
