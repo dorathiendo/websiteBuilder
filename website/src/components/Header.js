@@ -27,7 +27,7 @@ export default class Header extends Component {
             var className = (navLink.className) ? navLink.className : '';
             var link = (navLink.link) ? navLink.link : '';
             return <li className={className}>
-                <Link to={'/' + link}>{navLink.name}</Link>
+                <a href={'/' + link}>{navLink.name}</a>
                 {arrow}
                 <ul className="subNav">{subNav}</ul>
                 </li>
