@@ -82,7 +82,7 @@
 .contentSection .contentWrapper .content .childrenWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
 .contentSection .contentWrapper .content.white {
