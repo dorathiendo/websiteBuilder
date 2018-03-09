@@ -86,3 +86,5 @@ nginx-1.12.2/conf/koi-win
 nginx-1.12.2/conf/koi-utf
 nginx-1.12.2/conf/fastcgi_params
 nginx-1.12.2/conf/fastcgi.conf
+mocks/
+routes/mails/
