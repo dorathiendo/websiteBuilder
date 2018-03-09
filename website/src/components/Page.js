@@ -65,7 +65,7 @@ export default class Page extends Component {
                             padding="50px 10%"
                             color="white">
                             <div>
-                                <h2>{this.props.pageName}</h2>
+                                <h1>{this.props.pageName}</h1>
                                 <p>{data.header.info}</p>
                             </div>
                         </Content>

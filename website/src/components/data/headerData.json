@@ -1,106 +1,142 @@
 {
-    "navigationLinks": [
+  "navigationLinks": [
     {
-        "name": "MedSpa",
-        "link": "medspa",
-        "className": "bold",
-        "subNav": [
-            {
-                "name": "Thermage",
-                "link": "thermage"
-            },
-            {
-                "name": "Liposuction",
-                "link": "liposuction"
-            },
-            {
-                "name": "Smart Lipo",
-                "link": "smartlipo"
-            },
-            {
-                "name": "Vaser LipoSelection",
-                "link": "vaserliposelection"
-            },
-            {
-                "name": "LUX1540-fractional laser",
-                "link": "lux1540fractionallaser"
-            },
-            {
-                "name": "LUXV-acne treatment",
-                "link": "luxvacnetreatment"
-            },
-            {
-                "name": "More...",
-                "link": ""
-            }
-        ]
+      "name": "Book an Appointment",
+      "link": "appointment",
+      "className": "bold"
     },
     {
-        "name": "Health Clinic",
-        "link": "healthclinic",
-        "className": "bold",
-        "subNav": [
-            {
-                "name": "Injury Treatment",
-                "link": "injurytreatment"
-            },
-            {
-                "name": "Counseling",
-                "link": "counseling"
-            },
-            {
-                "name": "Long Term Treatment",
-                "link": "longtermtreatment"
-            },
-            {
-                "name": "Conditioning",
-                "link": "conditioning"
-            }
-        ]
+      "name": "DaySpa",
+      "link": "dayspa",
+      "className": "bold",
+      "subNav": [
+        {
+          "name": "Massage Treatments",
+          "link": "massages"
+        },
+        {
+          "name": "Facial Treatments",
+          "link": "facials"
+        },
+        {
+          "name": "Nail Service",
+          "link": "nails"
+        },
+        {
+          "name": "Eyelash Extensions",
+          "link": "eyelashes"
+        },
+        {
+          "name": "Semi Permanent Makeup",
+          "link": "semipermanentmakeup"
+        }
+      ]
     },
     {
-        "name": "DaySpa",
-        "link": "dayspa",
-        "className": "bold",
-        "subNav": [
-            {
-                "name": "Full Body Massage",
-                "link": "fullbodymassage"
-            },
-            {
-                "name": "Facials",
-                "link": "facials"
-            },
-            {
-                "name": "Waxing",
-                "link": "waxing"
-            },
-            {
-                "name": "Infrared Sauna Treatments",
-                "link": "infraredsaunatreatments"
-            },
-            {
-                "name": "More...",
-                "link": ""
-            }
-        ]
+      "name": "MedSpa",
+      "link": "medspa",
+      "className": "bold",
+      "subNav": [
+        {
+          "name": "Botox",
+          "link": "botox"
+        },
+        {
+          "name": "Xeomin",
+          "link": "xeomin"
+        },
+        {
+          "name": "IPL (Intense Pulse Light)",
+          "link": "ipl"
+        },
+        {
+          "name": "Juvederm",
+          "link": "juvederm"
+        },
+        {
+          "name": "Kybella",
+          "link": "kybella"
+        },
+        {
+          "name": "Liposuction",
+          "link": "liposuction"
+        },
+        {
+          "name": "Raidesse",
+          "link": "raidesse"
+        },
+        {
+          "name": "Thermage",
+          "link": "thermage"
+        }
+      ]
     },
     {
-        "name": "Specials",
-        "link": "specials"
+      "name": "Health Clinic",
+      "link": "healthclinic",
+      "className": "bold",
+      "subNav": [
+        {
+          "name": "Injury Treatment",
+          "link": "injurytreatment"
+        },
+        {
+          "name": "Counseling",
+          "link": "counseling"
+        },
+        {
+          "name": "Long Term Treatment",
+          "link": "longtermtreatment"
+        },
+        {
+          "name": "Conditioning",
+          "link": "conditioning"
+        }
+      ]
+    },
+
+    {
+      "name": "Specials",
+      "link": "specials",
+      "className": "bold",
+      "subNav": [
+        {
+          "name": "Events",
+          "link": "events"
+        },
+        {
+          "name": "Promotions (Coming Soon)",
+          "link": "promotions"
+        }
+      ]
     },
     {
-        "name": "Ask Dr. Lee",
-        "link": "ask"
+      "name": "Membership",
+      "link": "membership",
+      "className": "bold",
+      "subNav": [
+        {
+          "name": "Become a Member",
+          "link": "events"
+        },
+        {
+          "name": "Membership Specials",
+          "link": "specials"
+        },
+        {
+          "name": "Member Sign In",
+          "link": "signin"
+        }
+      ]
     },
     {
-        "name": "Education",
-        "link": "education"
-    },
-    {
-        "name": "Book an Appointment",
-        "link": "appointment",
-        "className": "bold"
+      "name": "Our Store",
+      "link": "store",
+      "subNav": [
+        {
+          "name": "(Coming Soon)"
+        }
+      ]
     }
-    ]
+  ]
 }

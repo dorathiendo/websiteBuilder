@@ -9,8 +9,15 @@ const Home = () => (
                 image="https://image.shutterstock.com/z/stock-photo-beauty-portrait-of-female-face-with-natural-skin-521859244.jpg"
                 backgroundColor="rgba(0,0,0,0.5)"
                 color="white">
-                <h1>Welcome to Biz MedSpa</h1>
-                <p>Biz Medspa is a medical spa and treatment center where you can find an array of therapies to rejuvenate and refresh your skin. We are a physican-based facility that focuses on caring for and treating the whole patient, so each time you meet with a Biz Medspa clinician you can be sure that we are receiving the best recommendations and care available. We also provide occupational health care for early treatment of employee injuries.</p>
+                <h1>Welcome to Lee Mac</h1>
+                <p>LEE MAC provides a comforting, yet stimulating, atmosphere in
+                  which customers will be able to relax their body, mind and
+                  spirit, reconnecting their daily lives to their true purpose
+                  through a wide range of holistic methods including massage,
+                  facial, body works, energy works, and medical aesthetic and
+                  anti-aging procedures. At LEE MAC, we drive for high customer
+                  satisfaction and deliver results with excellent services.
+                </p>
                 <button className="white">Learn More</button>
             </Content>
 
