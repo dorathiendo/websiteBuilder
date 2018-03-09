@@ -10,9 +10,9 @@ body {
     url("https://image.shutterstock.com/z/stock-photo-green-leaf-pattern-on-the-surface-449893840.jpg"); */
   /* background-attachment: fixed; */
   /* background-repeat: no-repeat; */
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #AE4975;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #85305A, #AE4975);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #85305A, #AE4975); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 

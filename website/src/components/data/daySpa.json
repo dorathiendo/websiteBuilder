@@ -6,11 +6,11 @@
   "services": {
     "massages": {
       "title": "Massage Treatments",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p><h2>Deep Tissue</h2><p>A full body massage that targets the chronic patterns of tension in the body.</p><p>60 minutes - $100</p><p>90 minutes - $135</p><h2>Hot Stone</h2><p>A massage consists of placing smooth heated stones at stragetic places on the back. The heated stones relieve stiffness and soreness in the back muscles and surrounding joints.</p><p>60 minutes - $90</p><p>90 minutes - $110</p>"
+      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p><h2>Deep Tissue</h2><p>A full body massage that targets the chronic patterns of tension in the body.</p><p>60 minutes - $100</p><p>90 minutes - $135</p><h2>Hot Stone</h2><p>A massage consists of placing smooth heated stones at stragetic places on the back. The heated stones relieve stiffness and soreness in the back muscles and surrounding joints.</p><p>60 minutes - $90</p><p>90 minutes - $110</p><h2>Reflexology</h2><p>A massage focusing on the feet to stimulate, rejuvenate, and reduce stress.</p><p>30 minutes - $50</p><p>90 minutes - $90</p>"
     },
     "nails": {
       "title": "Nail Service",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p>"
+      "info": "<p>Full Set Gel - $65</p><p>Gel Manicure - $45</p><p>Gel Pedicure - $55</p>"
     },
     "facials": {
       "title": "Facial Treatments",
