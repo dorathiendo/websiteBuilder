@@ -10,6 +10,9 @@ import Specials from './pages/Specials';
 import Ask from './pages/Ask';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
+import Membership from './pages/Membership';
+import Store from './pages/Store';
+import Appointments from './pages/Appointments';
 
 const Main = () => (
     <main>
@@ -18,10 +21,13 @@ const Main = () => (
             <Route path='/medspa/:service?' component={MedSpa}/>
             <Route path='/healthclinic/:service?' component={HealthClinic}/>
             <Route path='/dayspa/:service?' component={DaySpa}/>
-            <Route exact path='/specials' component={Specials}/>
+            <Route exact path='/specials/:service?' component={Specials}/>
             <Route exact path='/ask' component={Ask}/>
             <Route exact path='/education' component={Education}/>
             <Route exact path='/contact' component={Contact}/>
+            <Route exact path='/membership' component={Membership}/>
+            <Route exact path='/store' component={Store}/>
+            <Route exact path='/appointment' component={Appointments}/>
         </Switch>
     </main>
 );

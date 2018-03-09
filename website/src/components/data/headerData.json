@@ -102,11 +102,11 @@
       "subNav": [
         {
           "name": "Events",
-          "link": "events"
+          "link": ""
         },
         {
           "name": "Promotions (Coming Soon)",
-          "link": "promotions"
+          "link": ""
         }
       ]
     },
@@ -117,15 +117,15 @@
       "subNav": [
         {
           "name": "Become a Member",
-          "link": "events"
+          "link": ""
         },
         {
           "name": "Membership Specials",
-          "link": "specials"
+          "link": ""
         },
         {
           "name": "Member Sign In",
-          "link": "signin"
+          "link": ""
         }
       ]
     },
@@ -134,7 +134,8 @@
       "link": "store",
       "subNav": [
         {
-          "name": "(Coming Soon)"
+          "name": "(Coming Soon)",
+          "link": ""
         }
       ]
     }
