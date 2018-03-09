@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
 
 import Content from '../../components/Content.js';
+import Utils from '../utils/Utils';
 
 
 export default class Ask extends Component {
+    submit(e){
+        e.preventDefault();
+
+        const formData = {};
+        for (const field in this.refs) {
+            formData[field] = this.refs[field].value;
+        }
+        Utils.serverComm('/server/ask', formData, function(response){
+           console.log(response);
+        });
+    }
+
     render() {
         return (
             <div className="contentSection">
@@ -19,12 +32,12 @@ export default class Ask extends Component {
                         </div>
                     </Content>
                     <Content>
-                        <form action="">
-                            <input type="text" placeholder="Email"/>
-                            <input type="text" placeholder="Name"/>
-                            <input type="text" placeholder="Subject"/>
-                            <textarea placeholder="Message" rows="10"></textarea>
-                            <button className="black">Submit</button>
+                        <form id="ask_dr_lee">
+                            <input type="text" placeholder="Email" size={200} ref={"email"}/>
+                            <input type="text" placeholder="Name" ref={"name"}/>
+                            <input type="text" placeholder="Subject" ref={"subject"}/>
+                            <textarea placeholder="Message" rows="10" ref={"message"}></textarea>
+                            <button className="black" onClick={this.submit.bind(this)}>Submit</button>
                         </form>
                     </Content>
                 </div>
