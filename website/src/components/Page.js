@@ -33,7 +33,10 @@ export default class Page extends Component {
         let links = Object.keys(data.services).map(key => {
             return (
                 <Content>
-                    <ServiceLink title={data.services[key].title}>
+                    <ServiceLink
+                        title={data.services[key].title}
+                        link={'/' + this.props.linkName + '/' + key}
+                        >
                         <div dangerouslySetInnerHTML={{__html: data.services[key].info}}></div>
                     </ServiceLink>
                 </Content>

@@ -10,6 +10,7 @@ export default class HealthClinic extends Component {
         return (
             <Page
                 pageName="Health Services"
+                linkName="healthclinic"
                 serviceParam={serviceParam}
                 data={data}
                 ></Page>

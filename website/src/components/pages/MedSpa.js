@@ -11,6 +11,7 @@ export default class MedSpa extends Component {
         return (
             <Page
                 pageName="MedSpa"
+                linkName="medspa"
                 serviceParam={serviceParam}
                 data={data}
                 ></Page>
