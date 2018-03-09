@@ -11,6 +11,7 @@ export default class DaySpa extends Component {
         return (
             <Page
                 pageName="Health Services"
+                linkName="dayspa"
                 serviceParam={serviceParam}
                 data={data}
                 ></Page>

@@ -30,6 +30,11 @@
 .contentSection .contentWrapper .gridLayout.twoGrid {
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 1129px) {
+  .contentSection .contentWrapper .gridLayout.twoGrid {
+    grid-template-columns: 1fr;
+  }
+}
 .contentSection .contentWrapper .alignLeft .content {
   justify-content: flex-start;
 }
