@@ -16,7 +16,7 @@ export default class ServiceLink extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="serviceLink">
                 <h3>{this.props.title}</h3>
                 <Link to={this.props.link}><button>More</button></Link>
             </div>

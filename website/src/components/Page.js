@@ -32,7 +32,8 @@ export default class Page extends Component {
     renderServiceLinks(data) {
         let links = Object.keys(data.services).map(key => {
             return (
-                <Content>
+                <Content
+                minHeight="auto">
                     <ServiceLink
                         title={data.services[key].title}
                         link={'/' + this.props.linkName + '/' + key}
