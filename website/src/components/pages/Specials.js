@@ -9,7 +9,7 @@ export default class Specials extends Component {
        let data = {
          services: [],
          header: {
-           headerImageSrc: 'https://image.shutterstock.com/z/stock-photo-beauty-portrait-of-female-face-with-natural-skin-521859244.jpg'
+           headerImageSrc: "https://images.pexels.com/photos/56884/wellness-massage-relax-relaxing-56884.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
          }
        };
         return (
@@ -17,6 +17,7 @@ export default class Specials extends Component {
               <div className="contentWrapper">
                   <div>
                       <Content
+                          image={data.header.headerImageSrc}
                           backgroundColor="rgba(0,0,0,0.5)"
                           padding="50px 10%"
                           color="white">
