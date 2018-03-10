@@ -6,9 +6,17 @@ var router = express.Router();
 
 /* GET home page. */
 router.post('/ask', function(req, res) {
-  FS.createDirectory('mails');
-  FS.writeTextFile('/mails/' + req.body.email + '.' + new Date().getTime(), JSON.stringify(req.body));
+  var path = 'mails/ask'
+  FS.createDirectory(path);
+  FS.writeTextFile(path + '/' + req.body.email + '.' + new Date().getTime(), JSON.stringify(req.body));
   res.send(':pass');
+});
+
+router.post('/promotionList', function(req, res) {
+  var path = 'promotion_list';
+    FS.createDirectory(path);
+    FS.writeTextFile(path + '/' + req.body.email + '.' + new Date().getTime(), JSON.stringify(req.body));
+    res.send(':pass');
 });
 
 

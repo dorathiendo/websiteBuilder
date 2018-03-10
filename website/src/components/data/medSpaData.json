@@ -36,7 +36,31 @@
     },
     "botox": {
       "title": "BOTOX",
-      "info": "..."
+      "info": "<p>$14 per unit. Botulinum toxin is a neurotoxic protein produced by the bacterium Clostridium botulinum and related species.</p>"
+    },
+    "xeomin": {
+      "title": "XEOMIN",
+      "info": "<p>$12 per unit. An injection to reduce the appearance of frown lines between the eyebrows.</p>"
+    },
+    "ipl": {
+      "title": "INTENSE PULSE LIGHT",
+      "info": "<p>A photofacial method of photo rejuvenation that improves your skin's texture, tone and appearance.</p>"
+    },
+    "juvederm": {
+      "title": "JUVEDERM",
+      "info": "<p>A smooth gel injected under the skin to correct the appearance of moderate to severe lines and wrinkles.</p>"
+    },
+    "kybella": {
+      "title": "KYBELLA",
+      "info": "<p>A treatment to improve the appearance and profile of moderate to severe fat below the chin (submental fat) also call \"double chin.\"</p>"
+    },
+    "liposuction": {
+      "title": "LIPOSUCTION",
+      "info": "<p>A cosmetic procedure that removes fat that you can't seem to get rid of through diet and exercise.</p>"
+    },
+    "raidesse": {
+      "title": "RAIDESSE",
+      "info": "<p>A non-invasive prodedure that can help tighten and contour your skin without injections or surgery.</p>"
     }
   }
 
