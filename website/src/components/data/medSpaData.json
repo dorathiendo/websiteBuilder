@@ -1,7 +1,7 @@
 {
   "header": {
     "headerImageSrc": "https://images.pexels.com/photos/161599/scent-sticks-fragrance-aromatic-161599.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
-    "info": "Our clinicians are trained to apply their aesthetic sensibilities to every treatment to bring out the natural beauty of your skin. Based on your needs we offer skin rejuvenation treatments such as Thermage and Omnilux lights, wrinkle fillers such as RADIESSE® and JUVÉDERM®, teeth whitening and facial resurfacing. Each visit to BizMed Spa will leave you looking and feeling refreshed, renewed, andrejuvenated."
+    "info": ""
   },
   "services": {
     "thermage": {
@@ -20,23 +20,39 @@
     },
     "vaserliposelection": {
       "title": "Vaser LipoSelection",
-      "info": "..."
-    },
-    "lux1540fractionallaser": {
-      "title": "LUX1540-FRACTIONAL LASER",
-      "info": "..."
+      "info": "<p>At Biz Med Spa we now offer VelaShape™, to help you to lose weight and start looking great!<br>*VelaShape™ is the first and only FDA-cleared, non-surgical, alternative for cellulite and circumference reduction. The secret behind VelaShape is elos™- a unique technique that combines powerful energies to reduce the volume and appearance of fat tissues.<br>     It is now easy to enhance your body, improve your lifestyle and feel better about yourself! Fight the signs of aging - VelaShape™ Your Body today!<br>Call the experts at Biz Med Spa and find out if VelaShape™ is right for you. For a free consultation please call us today!<br>*Content taken in part from, www.velashape.com</p>"
     },
     "luxvacnetreatment": {
       "title": "LUXV-ACNE TREATMENT",
-      "info": "..."
-    },
-    "omniluxlights": {
-      "title": "OMNILUX LIGHTS",
-      "info": "..."
+      "info": "<p>LUX V is an aesthetic laser treatment that targets overactive sebaceous glands that cause acne, resulting in a dramatic reduction in acne lesions over the course of several treatment sessions. The laser emits a wavelength of light that alters the structure of the targeted sebaceous glands and reduces acne-causing oil production without injuring the top layer of skin. LUX V treatments take about 20 minutes depending on the location and amount of areas treated, and results should last up to 6 months. LUX V laser treatment differs from LUX1540 resurfacing treatment in that it does not affect or damage the top layer of skin, but rather targets deep glands. As with all laser treatments, there is some minimal risk of swelling and redness after treatment. Sunscreen of minimum SPF 30 should always be used after laser treatments.</p>"
     },
     "botox": {
       "title": "BOTOX",
-      "info": "..."
+      "info": "<p>BOTOX® Cosmetic is an injection administered to muscles in the forehead to reduce the appearance of moderate to severe frown lines between the eyebrows. BOTOX® Cosmetic is a prescription medication that blocks nerve impulses to the muscles between the brows, reducing wrinkle-causing muscle activity. Injections can be completed in about 10 minutes, and you should begin to see improvement in frown lines within days that may last up to 4 months. BOTOX® Cosmetic differs from injectable fillers such as RADIESSE® and JUVÉDERM® in that it targets muscles to smooth skin rather than filling wrinkles with an external substance. Due to the blocking effect of BOTOX® Cosmetic on nerve impulses, patients who have multiple sclerosis, bleeding disorders, are pregnant or nursing, or take certain medications should not have BOTOX® Cosmetic treatments.</p>"
+    },
+    "xeomin": {
+      "title": "XEOMIN",
+      "info": "<p>An injection to reduce the appearance of frown lines between the eyebrows.</p>"
+    },
+    "ipl": {
+      "title": "INTENSE PULSE LIGHT",
+      "info": "<p>A photofacial method of photo rejuvenation that improves your skin's texture, tone and appearance.</p>"
+    },
+    "juvederm": {
+      "title": "JUVEDERM",
+      "info": "<p>A smooth gel injected under the skin to correct the appearance of moderate to severe lines and wrinkles.</p>"
+    },
+    "kybella": {
+      "title": "KYBELLA",
+      "info": "<p>A treatment to improve the appearance and profile of moderate to severe fat below the chin (submental fat) also call \"double chin.\"</p>"
+    },
+    "liposuction": {
+      "title": "LIPOSUCTION",
+      "info": "<p>A cosmetic procedure that removes fat that you can't seem to get rid of through diet and exercise.</p>"
+    },
+    "raidesse": {
+      "title": "RAIDESSE",
+      "info": "<p>A non-invasive prodedure that can help tighten and contour your skin without injections or surgery.</p>"
     }
   }
 

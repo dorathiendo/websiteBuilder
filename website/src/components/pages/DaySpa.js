@@ -10,7 +10,7 @@ export default class DaySpa extends Component {
         let serviceParam = (this.props.match.params.service) ? this.props.match.params.service: null;
         return (
             <Page
-                pageName="Health Services"
+                pageName="Day Spa"
                 linkName="dayspa"
                 serviceParam={serviceParam}
                 data={data}

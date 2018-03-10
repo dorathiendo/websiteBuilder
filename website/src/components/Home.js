@@ -30,8 +30,8 @@ const Home = () => (
                 </Content>
                 <Content
                   color="white">
-                    <h2>LUX1540-Fractional Laser</h2>
-                    <p>LUX 1540 Fractional Laser is a dye-free skin resurfacing treatment designed to reduce the appearance of skin imperfections such as lines, wrinkles, acne scars, sun damage, hyperpigmentation, and stretch marks.</p>
+                    <h2>Intense Pulse Light (IPL)</h2>
+                    <p>A photofacial method of photo rejuvenation that improves your skin's texture, tone and appearance.</p>
                     <button className="white">More</button>
                 </Content>
                 <Content
