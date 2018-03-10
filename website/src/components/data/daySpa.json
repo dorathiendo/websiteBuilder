@@ -6,23 +6,28 @@
   "services": {
     "massages": {
       "title": "Massage Treatments",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p><h2>Deep Tissue</h2><p>A full body massage that targets the chronic patterns of tension in the body.</p><p>60 minutes - $100</p><p>90 minutes - $135</p><h2>Hot Stone</h2><p>A massage consists of placing smooth heated stones at stragetic places on the back. The heated stones relieve stiffness and soreness in the back muscles and surrounding joints.</p><p>60 minutes - $90</p><p>90 minutes - $110</p><h2>Reflexology</h2><p>A massage focusing on the feet to stimulate, rejuvenate, and reduce stress.</p><p>30 minutes - $50</p><p>90 minutes - $90</p>"
+      "info": "<h2>Signature</h2><p>30 minutes<br>90 minutes</p><h2>Deep Tissue</h2><p>A full body massage that targets the chronic patterns of tension in the body.<br>60 minutes<br>90 minutes</p><h2>Hot Stone</h2><p>A massage consists of placing smooth heated stones at stragetic places on the back. The heated stones relieve stiffness and soreness in the back muscles and surrounding joints.<br>60 minutes<br>90 minutes<br><h2>Reflexology</h2><p>A massage focusing on the feet to stimulate, rejuvenate, and reduce stress.<br>30 minutes<br>90 minutes</p>",
+      "image": "/images/34775651496_574fc81230.jpg"
     },
     "nails": {
       "title": "Nail Service",
-      "info": "<p>Full Set Gel - $65</p><p>Gel Manicure - $45</p><p>Gel Pedicure - $55</p>"
+      "info": "<ul><li>Full Set Gel</li><li>Gel Manicure</li><li>Gel Pedicure</li></ul>",
+      "image": "/images/35407015993_f348d00c2a.jpg"
     },
     "facials": {
       "title": "Facial Treatments",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p>"
+      "info": "<h2>Basic</h2><p>Our basic include steam treatment, cleansing and exfoliation, a hydrating treatment with a facial mask.</p><h2>LED Photo Facial</h2><p>This treatment uses narrow spectrum light to boost collagen, which creates plumper, younger-looking skin, or to kill the bacteria that causes acne.</p><h2>SilkPeel</h2><p>This treatment is design to improve the appearance of skin with just one or a series of treatments</p><h2>Acne</h2><p>This treatment utilizes lotions with alpha-hydroxy acids, urea peroxide, and salicylic acid for cleansing skin of whiteheads and blackheads</p><h2>Anti-Aging</h2><p>This treatment use products and technigques designed to slow the aging process, brighten skin, and reduce wrinkles.</p><h2>Pigmentation/Rosaceca</h2><p>This treatment comfortably fades the appearance of skin imperfections caused by the sun and uneven skin tones.</p>",
+      "image": "/images/8955908488_3401b159d5_o.jpg"
     },
     "eyelashes": {
       "title": "Eyelash Extensions",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p>"
+      "info": "<ul><li>Full Set - Silk Lashes</li><li>Full Set - Mink Lashes</li><li>Full Set - 3D Lashes</li><li>Touch Up</li></ul>",
+      "image": "/images/36826762706_9446302de1_c.jpg"
     },
     "semipermanentmakeup": {
       "title": "Semi Permanent Makeup",
-      "info": "<h2>Signature</h2><p>30 minutes - $50</p><p>90 minutes - $90</p>"
+      "info": "<ul><li>Eyebrows - Ombre</li><li>Eyebrows - Microblading</li><li>Eyeliner - Lash Enhancement</li><li>Touch Up</li></ul>",
+      "image": "/images/5829072516_080917019f_z.jpg"
     }
   }
 }

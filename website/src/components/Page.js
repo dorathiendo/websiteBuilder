@@ -19,7 +19,7 @@ export default class Page extends Component {
         return (
             <div className="gridLayout twoGrid">
                 <Content
-                    image={data.header.headerImageSrc}>
+                    image={serviceData.image? serviceData.image:data.header.headerImageSrc}>
                     <h2>{serviceData.title}</h2>
                 </Content>
                 <Content>
