@@ -21,3 +21,50 @@
 .footer ul li:hover {
   opacity: 0.5;
 }
+.footer .formWrapper {
+  display: flex;
+  justify-content: center;
+}
+.footer .formWrapper form#contactUs {
+  width: 50%;
+}
+.footer .formWrapper form#contactUs input,
+.footer .formWrapper form#contactUs textarea {
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+  outline: none;
+  padding: 10px;
+  background: white;
+  margin: 10px 0;
+}
+.footer .formWrapper button {
+  background: none;
+  outline: none;
+  padding: 10px 20px;
+  margin: 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+  border: 3px solid white;
+  color: white;
+  width: max-content;
+}
+.footer .formWrapper button.black {
+  border: 3px solid black;
+  color: black;
+}
+.footer .formWrapper button.white {
+  border: 3px solid white;
+  color: white;
+}
+.footer .formWrapper button.close {
+  float: right;
+  padding: 5px 10px;
+}
+.footer .formWrapper button:hover {
+  opacity: 0.5;
+}

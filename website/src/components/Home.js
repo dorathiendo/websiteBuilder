@@ -6,7 +6,7 @@ const Home = () => (
     <div className="contentSection">
         <div className="contentWrapper">
             <Content
-                image="https://images.pexels.com/photos/792994/pexels-photo-792994.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+                image="https://images.pexels.com/photos/433539/pexels-photo-433539.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
                 backgroundColor="rgba(0,0,0,0.5)"
                 color="white">
                 <h1>Welcome to Lee Mac</h1>

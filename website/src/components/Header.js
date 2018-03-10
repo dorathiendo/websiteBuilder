@@ -49,7 +49,11 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
+              <div className="logo">
+              <img className="logo" src="/images/logo.png" />
                 <h1><Link to='/'>{this.props.name}</Link></h1>
+              </div>
+
                 <ul className={(this.state.showSideNavigation) ? 'nav active' : 'nav'}>
                     <li>
                         <div className="menuButton"
