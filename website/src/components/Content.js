@@ -23,14 +23,19 @@ export default class Content extends Component {
         }
         return styles
     }
-
+    setBackgroundImage(){
+      if(this.props.image){
+          return <img className="backgroundImage" src={this.props.image} />
+      }
+    }
     render() {
         var className = (this.props.className) ? 'content ' + this.props.className : 'content';
         var styles = this.setStyle();
         return (
             <div>
                 <div className={className} style={styles}>
-                    <img className="backgroundImage" src={this.props.image} />
+                    {this.setBackgroundImage()}
+
                     <div className="childrenWrapper">
                     {(this.props.title) ? <h2>{this.props.title}</h2> : ''}
                     {this.props.children}

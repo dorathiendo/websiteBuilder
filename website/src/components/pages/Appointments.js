@@ -28,11 +28,13 @@ export default class Appointments extends Component {
                       </Content>
                       <Content>
                         <h2>Join our email list for regular updates on promotions and event offers!</h2>
+                        <div className="formWrapper">
                         <form>
                           <input type="text" placeholder="Name" />
                           <input type="email" placeholder="Email" />
-                          <button className="black">Submit</button>
+                          <button className="white">Submit</button>
                         </form>
+                        </div>
                       </Content>
                   </div>
               </div>
