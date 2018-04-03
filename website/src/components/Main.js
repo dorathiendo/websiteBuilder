@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Membership from './pages/Membership';
 import Store from './pages/Store';
 import Appointments from './pages/Appointments';
+import Message from './pages/Message';
 
 const Main = () => (
     <main>
@@ -28,6 +29,7 @@ const Main = () => (
             <Route exact path='/membership' component={Membership}/>
             <Route exact path='/store' component={Store}/>
             <Route exact path='/appointment' component={Appointments}/>
+            <Route exact path='/message/:message' component={Message}/>
         </Switch>
     </main>
 );
