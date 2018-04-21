@@ -131,7 +131,7 @@ var Http = {
 //     subject: 'test',
 //     message: 'test message',
 // });
-mail.initThread();
+// mail.initThread();
 
 module.exports = {
     FS: FS,

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/header.css'
+import '../styles/input-moment.min.css';
+import '../styles/header.css';
 
 import data from './data/headerData.json';
 
