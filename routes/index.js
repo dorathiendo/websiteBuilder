@@ -56,6 +56,11 @@ router.post('/promotionList', function(req, res) {
     res.send(':pass');
 });
 
+router.get('/startMailThread', function(req, res){
+    Mail.initThread();
+    res.send(':pass');
+});
+
 
 
 
