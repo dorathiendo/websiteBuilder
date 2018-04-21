@@ -18,10 +18,16 @@ export default class Page extends Component {
         var serviceData = data.services[param];
         return (
             <div className="gridLayout twoGrid">
-                <Content
-                    image={serviceData.image? serviceData.image:data.header.headerImageSrc}>
-                    <h2>{serviceData.title}</h2>
-                </Content>
+                <div className="gridLayout twoGrid">
+                    <Content>
+                        <iframe id="widget" src="http://fromyourdoctor.com/widget/1601" title="Patient Library" width="160" height="480" frameborder="0"></iframe>
+
+                    </Content>
+                    <Content
+                        image={serviceData.image? serviceData.image:data.header.headerImageSrc}>
+                        <h2>{serviceData.title}</h2>
+                    </Content>
+                </div>
                 <Content>
                     <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
                 </Content>
