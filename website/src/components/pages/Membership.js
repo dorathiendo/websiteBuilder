@@ -23,7 +23,7 @@ export default class Membership extends Component {
                           color="white">
                           <div>
                               <h2>Membership</h2>
-                              <p>Coming Soon</p>
+                              <p className="comingSoon">Coming Soon</p>
                           </div>
                       </Content>
                       <Content>

@@ -37,11 +37,13 @@ export default class Footer extends Component {
         )
         return (
             <div className="footer">
-                {contactUs}
-                <p>Lee Mac</p>
-                <p>42650 Christy Street, Fremont, CA 94538</p>
-                <p>(510) 226 - 8832</p>
-                <p>info@leemac.biz</p>
+            <iframe id="widget" src="http://fromyourdoctor.com/widget/1601" title="Patient Library" width="160" height="480" frameborder="0"></iframe>
+            {contactUs}
+            <p>Lee Mac</p>
+            <p>42650 Christy Street, Fremont, CA 94538</p>
+            <p>(510) 226 - 8832</p>
+            <p>info@leemac.biz</p>
+
             </div>
         );
     }

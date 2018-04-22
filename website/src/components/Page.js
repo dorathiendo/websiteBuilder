@@ -17,22 +17,39 @@ export default class Page extends Component {
     renderSublink(param, data) {
         var serviceData = data.services[param];
         return (
-            <div className="gridLayout twoGrid">
+          <div >
+            <div>
                 <div className="gridLayout twoGrid">
-                    <Content>
-                        <iframe id="widget" src="http://fromyourdoctor.com/widget/1601" title="Patient Library" width="160" height="480" frameborder="0"></iframe>
-
-                    </Content>
                     <Content
                         image={serviceData.image? serviceData.image:data.header.headerImageSrc}>
                         <h2>{serviceData.title}</h2>
                     </Content>
+                    <Content>
+                        <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
+                    </Content>
                 </div>
-                <Content>
-                    <div dangerouslySetInnerHTML={{__html: data.services[param].info}}></div>
-                </Content>
+
+
             </div>
+            <div class="videoList">
+            {serviceData.videos && this.renderVideoList(serviceData.videos)}
+            </div>
+          </div>
         )
+    }
+
+    renderVideoList(videoList){
+      const items = videoList.map((i) => {
+        return (
+          <video id='medSpa_player' class='video-js' controls preload='auto' poster={i.poster} data-setup='{}'>
+            <source src={i.source} type='video/mp4'></source>
+            <source src={i.source} type='video/webm'></source>
+            <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source>
+            <p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p>
+          </video>
+      )
+      });
+      return items;
     }
 
     renderServiceLinks(data) {
