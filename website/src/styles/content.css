@@ -41,12 +41,19 @@
 }
 .contentSection .contentWrapper .videoList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .contentSection .contentWrapper .videoList video {
-  width: 100%;
+  width: 50%;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1129px) {
+  .contentSection .contentWrapper .videoList video {
+    width: 100%;
+  }
 }
 .contentSection .contentWrapper .alignLeft .content {
   justify-content: flex-start;
