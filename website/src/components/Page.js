@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import Content from '../components/Content';
 import ServiceLink from '../components/ServiceLink';
@@ -38,18 +39,34 @@ export default class Page extends Component {
         )
     }
 
-    renderVideoList(videoList){
-      const items = videoList.map((i) => {
-        return (
-          <video id='medSpa_player' class='video-js' controls preload='auto' poster={i.poster} data-setup='{}'>
-            <source src={i.source} type='video/mp4'></source>
-            <source src={i.source} type='video/webm'></source>
-            <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source>
-            <p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p>
-          </video>
-      )
-      });
-      return items;
+    play(e) {
+        var video = $(e.target);
+        var status = video.attr('status');
+        if (status === 'play') {
+            e.target.pause();
+            video.attr('status', 'pause');
+        } else {
+            e.target.play();
+            video.attr('status', 'play');
+        }
+    }
+
+    renderVideoList(videoList) {
+        var me = this;
+        const items = videoList.map((i) => {
+            return (
+                <video onClick={me.play} id='medSpa_player' class='video-js' preload='auto' poster={i.poster}
+                       data-setup='{}' title={i.title + '\nClick to toggle play and pause'}>
+                    <source src={i.source} type='video/mp4'></source>
+                    <source src={i.source} type='video/webm'></source>
+                    <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source>
+                    <p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web
+                        browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5
+                            video </a></p>
+                </video>
+            )
+        });
+        return items;
     }
 
     renderServiceLinks(data) {

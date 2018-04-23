@@ -31,24 +31,29 @@
       "info": "<p>BOTOX® Cosmetic is an injection administered to muscles in the forehead to reduce the appearance of moderate to severe frown lines between the eyebrows. BOTOX® Cosmetic is a prescription medication that blocks nerve impulses to the muscles between the brows, reducing wrinkle-causing muscle activity. Injections can be completed in about 10 minutes, and you should begin to see improvement in frown lines within days that may last up to 4 months. BOTOX® Cosmetic differs from injectable fillers such as RADIESSE® and JUVÉDERM® in that it targets muscles to smooth skin rather than filling wrinkles with an external substance. Due to the blocking effect of BOTOX® Cosmetic on nerve impulses, patients who have multiple sclerosis, bleeding disorders, are pregnant or nursing, or take certain medications should not have BOTOX® Cosmetic treatments.</p>",
       "videos": [
         {
-          "poster": "/videos/BCT109011_Deion-Sanders-Stealthie.jpg",
-          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4"
+          "poster": "/videos/Deion Sanders 50th Birthday Video.jpg",
+          "source": "/videos/BCT109010_Deion-Sanders-50th-Birthday.mp4",
+          "title": "Deion Sanders 50th Birthday Video."
         },
         {
-          "poster": "/videos/BCT109011_Deion-Sanders-Stealthie.jpg",
-          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4"
+          "poster": "/videos/Deion Sanders Stealthie Video.jpg",
+          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4",
+          "title": "Deion Sanders Stealthie Video."
         },
         {
-          "poster": "/videos/BCT109011_Deion-Sanders-Stealthie.jpg",
-          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4"
+          "poster": "/videos/Brooke, 31.jpg",
+          "source": "/videos/Botox_CFL_Brooke.mp4",
+          "title": "Brooke, 31."
         },
         {
-          "poster": "/videos/BCT109011_Deion-Sanders-Stealthie.jpg",
-          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4"
+          "poster": "/videos/Eliana, 32.jpg",
+          "source": "/videos/Botox_CFL_Eliana.mp4",
+          "title": "Eliana, 32."
         },
         {
-          "poster": "/videos/BCT109011_Deion-Sanders-Stealthie.jpg",
-          "source": "/videos/BCT109011_Deion-Sanders-Stealthie.mp4"
+          "poster": "/videos/Clint, 54.jpg",
+          "source": "/videos/Botox_CFL_Clint.mp4",
+          "title": "Clint, 54"
         }
       ]
     },
@@ -62,7 +67,39 @@
     },
     "juvederm": {
       "title": "JUVEDERM",
-      "info": "<p>A smooth gel injected under the skin to correct the appearance of moderate to severe lines and wrinkles.</p><div> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video> <video width='14%' id='medSpa_player' class='video-js' controls preload='auto' poster='/videos/BCT109011_Deion-Sanders-Stealthie.jpg' data-setup='{}'> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/mp4'></source> <source src='/videos/BCT109011_Deion-Sanders-Stealthie.mp4' type='video/webm'></source> <source src='//vjs.zencdn.net/v/oceans.ogv' type='video/ogg'></source><p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href='http://videojs.com/html5-video-support/' target='_blank'> supports HTML5 video </a></p> </video></div>"
+      "info": "<p>A smooth gel injected under the skin to correct the appearance of moderate to severe lines and wrinkles.</p>",
+      "videos": [
+        {
+          "poster": "/videos/JUVÉDERM® Lip Collection Product Differentiation Video – Make Your Mark.jpg",
+          "source": "/videos/Make Your Mark - Collection.mp4",
+          "title": "JUVÉDERM® Lip Collection Product Differentiation Video – Make Your Mark."
+        },
+        {
+          "poster": "/videos/JUVÉDERM® Journey Video.jpg",
+          "source": "/videos/Juvederm_Journey_Video.mp4",
+          "title": "JUVÉDERM® Journey Video."
+        },
+        {
+          "poster": "/videos/JUVÉDERM® Across Generations Q&A Video.jpg",
+          "source": "/videos/Juvederm_Across_Generations.mp4",
+          "title": "JUVÉDERM® Across Generations Q&A Video."
+        },
+        {
+          "poster": "/videos/Kathy's Testimonial.jpg",
+          "source": "/videos/Kathy Testimonial.mp4",
+          "title": "Kathy's Testimonial."
+        },
+        {
+          "poster": "/videos/JUVÉDERM VOLBELLA® XC Product and Consultation Information for Patients.jpg",
+          "source": "/videos/Make Your Mark - Volbella.mp4",
+          "title": "JUVÉDERM VOLBELLA® XC Product and Consultation Information for Patients."
+        },
+        {
+          "poster": "/videos/JUVÉDERM® Ultra XC Product and Consultation Information for Patients.jpg",
+          "source": "/videos/Make Your Mark - Ultra XC.mp4",
+          "title": "JUVÉDERM® Ultra XC Product and Consultation Information for Patients."
+        }
+      ]
     },
     "kybella": {
       "title": "KYBELLA",
