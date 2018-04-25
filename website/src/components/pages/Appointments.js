@@ -37,7 +37,7 @@ export default class Appointments extends Component {
             }
         }
         if (fieldKey === 'appointment.'){
-            formData.message += ' ' + formData.date_time;
+            formData.message += ' ' + formData.date_time + ' for ' + formData.name + ' (' + formData.contact_number + ')';
         }
 
         Utils.serverComm('/server/ask', formData, function (response) {
