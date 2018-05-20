@@ -7,26 +7,16 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h1>Logo</h1>
+                <h1>Film Dev Timer</h1>
                 <ul className="nav brackets">
                     <li>
                         <Link to='/about'>About</Link>
-                        <ul className="subNav">
-                            <li><a href="">Sub Nav</a></li>
-                            <li><a href="">Sub Nav</a></li>
-                            <li><a href="">Sub Nav</a></li>
-                        </ul>
                     </li>
                     <li>
-                        <a href="">Nav</a>
-                        <ul className="subNav">
-                            <li><a href="">Sub Nav</a></li>
-                            <li><a href="">Sub Nav</a></li>
-                            <li><a href="">Sub Nav</a></li>
-                        </ul>
+                        <Link to='/color'>Color</Link>
                     </li>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link to='/bw'>B&W</Link>
                     </li>
                 </ul>
             </div>
