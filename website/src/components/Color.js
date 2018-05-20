@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/content.css';
 
 import Step from '../components/Step.js';
-
+import StepData from '../data/colorSteps.json';
 
 export default class Color extends Component {
   constructor(props){
@@ -30,7 +30,7 @@ export default class Color extends Component {
     return (
         <div className="contentSection">
           <h1>Color</h1>
-          <Step stepIndex={this.state.stepIndex} maxTime="10"></Step>
+          <Step stepIndex={this.state.stepIndex} data={StepData[this.state.stepIndex-1]}></Step>
           {this.state.stepIndex > 1 &&
             <button onClick={this.decreaseStepIndex}>Prev</button>
           }

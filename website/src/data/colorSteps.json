@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Presoak",
+    "maxTime": 60,
+    "type": "wait"
+  },
+  {
+    "name": "Develop",
+    "maxTime": 180,
+    "type": "agitate"
+  }
+]
