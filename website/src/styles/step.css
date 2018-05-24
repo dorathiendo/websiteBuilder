@@ -1,0 +1,38 @@
+.step {
+  text-align: center;
+}
+.step h1 {
+  font-size: 1.5em;
+}
+.step .timer {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+.step .buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step button {
+  background: none;
+  border: 3px solid black;
+  padding: 10px 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+}
+.step button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.step input[type="text"] {
+  border: 3px solid black;
+  padding: 10px 20px;
+  text-align: center;
+}
+.step select {
+  border: 1px solid black;
+  background: none;
+}

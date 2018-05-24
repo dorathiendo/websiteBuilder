@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/content.css';
 
 import Step from '../components/Step.js';
-import StepData from '../data/colorSteps.json';
+import StepData from '../data/bwSteps.json';
 
 export default class Color extends Component {
   constructor(props){
@@ -12,7 +12,7 @@ export default class Color extends Component {
   render() {
     return (
         <div className="contentSection">
-          <h1>Color</h1>
+          <h1>Black & White</h1>
           <Step data={StepData}></Step>
         </div>
     );

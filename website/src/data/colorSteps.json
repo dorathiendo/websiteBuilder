@@ -1,12 +1,44 @@
 [
   {
-    "name": "Presoak",
+    "name": "Presoak (102F)",
     "maxTime": 60,
     "type": "wait"
   },
   {
-    "name": "Develop",
-    "maxTime": 180,
+    "name": "Develop (102F)",
+    "maxTime": 210,
+    "type": "agitate",
+    "options": {
+      "type": "select",
+      "push": [
+        {
+          "amount": 1,
+          "label": "No push"
+        },
+        {
+          "amount": 1.25,
+          "label": "Push 1 stop"
+        },
+        {
+          "amount": 1.5,
+          "label": "Push 2 stop"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Blix (95F-105F)",
+    "maxTime": 360,
     "type": "agitate"
+  },
+  {
+    "name": "Soak (95F-105F)",
+    "maxTime": 180,
+    "type": "wait"
+  },
+  {
+    "name": "Stab (Room temp)",
+    "maxTime": 180,
+    "type": "agitateWait"
   }
 ]

@@ -3,6 +3,7 @@
 }
 .contentSection h1 {
   font-family: 'Libre Baskerville', serif;
+  text-align: center;
 }
 .contentSection .contentWrapper {
   display: grid;
