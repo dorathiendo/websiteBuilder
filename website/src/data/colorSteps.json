@@ -8,6 +8,7 @@
     "name": "Develop (102F)",
     "maxTime": 210,
     "type": "agitate",
+    "agitateTime": 15,
     "options": {
       "type": "select",
       "push": [
@@ -29,7 +30,8 @@
   {
     "name": "Blix (95F-105F)",
     "maxTime": 360,
-    "type": "agitate"
+    "type": "agitate",
+    "agitateTime": 15
   },
   {
     "name": "Soak (95F-105F)",
@@ -39,6 +41,7 @@
   {
     "name": "Stab (Room temp)",
     "maxTime": 180,
-    "type": "agitateWait"
+    "type": "agitateWait",
+    "agitateTime": 15
   }
 ]

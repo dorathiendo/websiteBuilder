@@ -6,7 +6,6 @@ export default class Step extends Component {
     super(props);
     this.state = {
       stepIndex: 0,
-      agitateTimer: 15,
       invertTimer: 30,
       instruction: '-'
     }
@@ -20,12 +19,16 @@ export default class Step extends Component {
   }
   componentDidMount(){
     this.setState({ count: this.data.maxTime });
+    this.setState({ agitateTimer: (this.data.agitateTime)? this.data.agitateTime : 0 });
   }
   componentWillUnmount() {
     clearInterval(this.timer);
   }
   startTimer () {
-    clearInterval(this.timer)
+    clearInterval(this.timer);
+    if((this.data.type == "agitate") || (this.data.type == "agitateWait")){
+      document.getElementById("agitate_sound").play();
+    }
     this.timer = setInterval(this.tick.bind(this), 1000)
   }
   tick () {
@@ -45,6 +48,9 @@ export default class Step extends Component {
         this.setState({invertTimer: (this.state.invertTimer - 1)});
         this.setState({instruction: 'Wait'});
       } else if(this.state.count < 15){
+        if(this.state.count == 14){
+          document.getElementById("pour_sound").play();
+        }
         this.setState({instruction: 'Pour Out'});
       } else {
         this.setState({agitateTimer: 15});
@@ -62,6 +68,9 @@ export default class Step extends Component {
       }
     } else {
       if(this.state.count < 15){
+        if(this.state.count == 14){
+          document.getElementById("pour_sound").play();
+        }
         this.setState({instruction: 'Pour Out'});
       } else {
         this.setState({instruction: 'Wait'});

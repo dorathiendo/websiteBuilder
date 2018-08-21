@@ -13,10 +13,44 @@
   font-size: 1em;
   font-family: 'Libre Baskerville', serif;
 }
+.header .menuButton {
+  display: none;
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  .header .menuButton {
+    display: inline;
+  }
+}
 .header ul.nav {
+  transition: right 500ms;
   float: right;
   margin: 0;
   list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+  .header ul.nav {
+    background-color: #eeeeee;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 50px 0 0 0;
+  }
+  .header ul.nav > li {
+    padding: 10px 20px !important;
+    display: block !important;
+  }
+  .header ul.nav .menuButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .header ul.nav.menuClosed {
+    right: -100%;
+  }
 }
 .header ul.nav > li {
   text-align: center;

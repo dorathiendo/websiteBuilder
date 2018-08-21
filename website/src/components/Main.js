@@ -5,6 +5,7 @@ import Home from './Home';
 import About from '../components/About.js';
 import Color from '../components/Color.js';
 import Bw from '../components/Bw.js';
+import Slide from '../components/Slide.js';
 
 
 
@@ -17,9 +18,10 @@ const Main = () => (
     <main>
         <Switch>
             <Route exact path='/' component={Home}/>
-            <Route exact path='/about' component={About}/>
+            // <Route exact path='/about' component={About}/>
             <Route exact path='/color' component={Color}/>
             <Route exact path='/bw' component={Bw}/>
+            <Route exact path='/slide' component={Slide}/>
         </Switch>
     </main>
 );

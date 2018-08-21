@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Presoak (85F)",
+    "maxTime": 60,
+    "type": "wait"
+  },
+  {
+    "name": "First Developer (85F)",
+    "maxTime": 810,
+    "type": "agitate",
+    "agitateTime": 15
+  },
+  {
+    "name": "Wash (Quickly fill and empty tank 7 times)",
+    "maxTime": 180,
+    "type": "wait"
+  },
+  {
+    "name": "Color Developer (85F)",
+    "maxTime": 330,
+    "type": "agitate",
+    "agitateTime": 15
+  },
+  {
+    "name": "Wash (Quickly fill and empty tank 7 times)",
+    "maxTime": 180,
+    "type": "wait"
+  },
+  {
+    "name": "Blix (85F)",
+    "maxTime": 600,
+    "type": "agitate",
+    "agitateTime": 15
+  },
+  {
+    "name": "Soak (95F-105F)",
+    "maxTime": 300,
+    "type": "wait"
+  }
+]

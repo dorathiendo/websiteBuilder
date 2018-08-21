@@ -3,6 +3,7 @@
     "name": "Develop (102F)",
     "maxTime": 0,
     "type": "agitate",
+    "agitateTime": 15,
     "options": {
       "customTime": {
         "label": "Enter a custom time (mins)"
@@ -12,11 +13,13 @@
   {
     "name": "Stop",
     "maxTime": 120,
-    "type": "agitate"
+    "type": "agitate",
+    "agitateTime": 15
   },
   {
     "name": "Fix",
     "maxTime": 420,
-    "type": "wait"
+    "type": "agitate",
+    "agitateTime": 15
   }
 ]

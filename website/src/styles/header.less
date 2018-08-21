@@ -12,7 +12,39 @@
     font-size: 1em;
     font-family: 'Libre Baskerville', serif;
   }
+  .menuButton {
+    display: none;
+    float: right;
+    @media only screen and (max-width: 600px){
+      display: inline;
+    }
+  }
   ul.nav {
+    transition: right 500ms;
+
+    @media only screen and (max-width: 600px){
+      // display: none;
+      background-color: #eeeeee;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 50px 0 0 0;
+      & > li {
+        padding: 10px 20px !important;
+        display: block !important;
+      }
+      .menuButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+      }
+      &.menuClosed{
+        right: -100%;
+      }
+    }
     float: right;
     margin: 0;
     list-style-type: none;
