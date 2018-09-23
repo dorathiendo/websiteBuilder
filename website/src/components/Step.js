@@ -6,6 +6,8 @@ export default class Step extends Component {
     super(props);
     this.state = {
       stepIndex: 0,
+      isAgitateStep: true,
+      agitateTimer: 15,
       invertTimer: 30,
       instruction: '-'
     }
@@ -19,7 +21,7 @@ export default class Step extends Component {
   }
   componentDidMount(){
     this.setState({ count: this.data.maxTime });
-    this.setState({ agitateTimer: (this.data.agitateTime)? this.data.agitateTime : 0 });
+    // this.setState({ agitateTimer: (this.data.agitateTime)? this.data.agitateTime : 0 });
   }
   componentWillUnmount() {
     clearInterval(this.timer);
@@ -28,11 +30,14 @@ export default class Step extends Component {
     clearInterval(this.timer);
     if((this.data.type == "agitate") || (this.data.type == "agitateWait")){
       document.getElementById("agitate_sound").play();
+      this.setState({instruction: 'Agitate'});
     }
-    this.timer = setInterval(this.tick.bind(this), 1000)
+    this.timer = setInterval(this.tick.bind(this), 1000);
   }
   tick () {
     if(this.state.count <= 0){
+      document.getElementById("done_sound").play();
+      this.setState({instruction: 'Done'});
       clearInterval(this.timer)
     } else {
       this.setState({count: (this.state.count - 1)});
@@ -40,41 +45,40 @@ export default class Step extends Component {
     }
   }
   updateInstruction(){
-    if(this.data.type == "agitate"){
-      if((this.state.count < this.data.maxTime) && (this.state.count >= this.data.maxTime - 15)){
-        this.setState({agitateTimer: (this.state.agitateTimer - 1)});
-        this.setState({instruction: 'Agitate'});
-      } else if((this.state.count < this.data.maxTime - 15) && (this.state.invertTimer > 0)){
-        this.setState({invertTimer: (this.state.invertTimer - 1)});
-        this.setState({instruction: 'Wait'});
-      } else if(this.state.count < 15){
-        if(this.state.count == 14){
-          document.getElementById("pour_sound").play();
+    switch(this.data.type){
+      case 'agitate':
+        if(this.state.isAgitateStep && this.state.agitateTimer > 1){
+            const curAgitateTimer = this.state.agitateTimer - 1;
+            this.setState({agitateTimer: curAgitateTimer});
+        } else if(this.state.isAgitateStep && this.state.agitateTimer == 1) {
+            this.setState({instruction: 'Wait'});
+            document.getElementById("wait_sound").play();
+            this.setState({isAgitateStep: false});
+        } else if(this.state.invertTimer > 1) {
+            const curInvertTimer = this.state.invertTimer - 1;
+            this.setState({invertTimer: curInvertTimer});
+        } else {
+            this.setState({instruction: 'Invert'});
+            document.getElementById("invert_sound").play();
+            this.setState({invertTimer: 30});
         }
-        this.setState({instruction: 'Pour Out'});
-      } else {
-        this.setState({agitateTimer: 15});
-        this.setState({invertTimer: 30});
-        this.setState({instruction: 'Invert 4x'});
-      }
-    } else if(this.data.type == 'agitateWait'){
-      if((this.state.count < this.data.maxTime) && (this.state.count >= this.data.maxTime - 15)){
-        this.setState({agitateTimer: (this.state.agitateTimer - 1)});
-        this.setState({instruction: 'Agitate'});
-      } else if(this.state.count < 15){
-        this.setState({instruction: 'Pour Out'});
-      } else {
-        this.setState({instruction: 'Wait'});
-      }
-    } else {
-      if(this.state.count < 15){
-        if(this.state.count == 14){
-          document.getElementById("pour_sound").play();
+        console.log(`Count: ${this.state.count}, agitateTime: ${this.state.agitateTimer}, invertTimer: ${this.state.invertTimer}`);
+        break;
+      case 'agitateWait':
+        if(this.state.isAgitateStep && this.state.agitateTimer > 1){
+            const curAgitateTimer = this.state.agitateTimer - 1;
+            this.setState({agitateTimer: curAgitateTimer});
+        } else if(this.state.isAgitateStep && this.state.agitateTimer == 1) {
+            this.setState({instruction: 'Wait'});
+            document.getElementById("wait_sound").play();
+            this.setState({isAgitateStep: false});
         }
-        this.setState({instruction: 'Pour Out'});
-      } else {
+        break;
+      case 'wait':
         this.setState({instruction: 'Wait'});
-      }
+        break;
+      default:
+        break;
     }
   }
   toHHMMSS(seconds) {
@@ -90,7 +94,7 @@ export default class Step extends Component {
   }
   increaseStepIndex(){
     var currentIndex = this.state.stepIndex + 1;
-    if(currentIndex <= this.props.data.length){
+    if(currentIndex < this.props.data.length){
       this.setState({ stepIndex: currentIndex });
       this.data = this.props.data[currentIndex];
       this.setState({ count: this.data.maxTime });
@@ -99,7 +103,7 @@ export default class Step extends Component {
   }
   decreaseStepIndex(){
     var currentIndex = this.state.stepIndex - 1;
-    if(currentIndex >= 1){
+    if(currentIndex >= 0){
       this.setState({ stepIndex: currentIndex });
       this.data = this.props.data[currentIndex];
       this.setState({ count: this.data.maxTime });
@@ -126,6 +130,14 @@ export default class Step extends Component {
             this.setState({ count: c});
           }} />
       }
+      if(this.data.options.temp){
+        var op = this.data.options.temp.map((a) => {
+          return <option value={a.amount}>{a.label}</option>
+        });
+        options = <select onChange={(e) => {
+          this.setState({ count: e.target.value })
+        }}>{op}</select>
+      }
       return (
         <div>{options}</div>
       )
@@ -136,10 +148,14 @@ export default class Step extends Component {
         <div className="step">
           <h1>Step {this.state.stepIndex + 1}: {this.data.name}</h1>
           {this.selectOptions()}
-          <h2 className="timer">{this.toHHMMSS(this.state.count)}</h2>
+          { this.data.maxTime > 0 &&
+            <h2 className="timer">{this.toHHMMSS(this.state.count)}</h2>
+          }
           <h3 className="instruction">{this.state.instruction}</h3>
           <div className="buttonWrapper">
-            <button onClick={this.startTimer}>Start</button>
+            {this.data.maxTime > 0 &&
+              <button onClick={this.startTimer}>Start</button>
+            }
           </div>
           <div className="buttonWrapper">
             <button onClick={this.decreaseStepIndex}>Prev</button>
